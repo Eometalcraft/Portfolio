@@ -302,3 +302,7 @@ footer {
     }
 
 }
+.identity a {
+    color: inherit;
+    text-decoration: none;
+}
