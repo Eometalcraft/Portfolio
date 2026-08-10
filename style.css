@@ -311,3 +311,22 @@ footer {
     color: #111111;
     text-decoration: none;
 }
+/* HEADER FIX */
+
+.header {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100%;
+}
+
+.navigation {
+    display: flex !important;
+    margin-left: auto !important;
+    flex-shrink: 0;
+}
+
+.identity {
+    flex-shrink: 0;
+}
