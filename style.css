@@ -126,7 +126,7 @@ footer {
 
 .about {
     width: 88%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 40px auto 0;
 }
 
@@ -143,8 +143,8 @@ footer {
 }
 
 .profile img {
-    width: 290px;
-    height: 390px;
+    width: 320px;
+    height: 430px;
 
     object-fit: cover;
 }
@@ -240,15 +240,13 @@ footer {
 @media (max-width: 1000px) {
 
     .header {
-        height: auto;
+        height: 100px;
 
-        padding: 35px 0;
+        flex-direction: row;
 
-        flex-direction: column;
+        align-items: center;
 
-        align-items: flex-start;
-
-        gap: 25px;
+        justify-content: space-between;
     }
 
     .navigation {
@@ -256,7 +254,7 @@ footer {
     }
 
     .about {
-        width: 100%;
+        width: 88%;
     }
 
 }
