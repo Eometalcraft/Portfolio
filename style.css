@@ -140,7 +140,7 @@ body {
 
 .profile {
     display: flex;
-    align-items: flex-start;
+  align-items: flex-start;
     gap: 45px;
     margin-bottom: 130px;
 }
