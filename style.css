@@ -178,11 +178,15 @@ body {
     margin-bottom: 30px;
 }
 
+.cv-section:first-of-type {
+    margin-bottom: 70px;
+}
 .cv-section h2 {
     margin: 0 0 10px;
 
     font-size: 25px;
     font-weight: 700;
+    
 }
 
 .cv-row {
