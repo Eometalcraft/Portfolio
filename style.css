@@ -306,3 +306,10 @@ footer {
     color: inherit;
     text-decoration: none;
 }
+.identity a,
+.identity a:visited,
+.identity a:hover,
+.identity a:active {
+    color: #111111;
+    text-decoration: none;
+}
