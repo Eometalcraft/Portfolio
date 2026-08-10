@@ -140,13 +140,13 @@ body {
 
 .profile {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 45px;
     margin-bottom: 130px;
 }
 
 .profile-info {
-    transform: translateY(30px);
+    margin-top: 300px;
 }
 
 .profile img {
