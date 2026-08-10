@@ -174,16 +174,12 @@ body {
 
     font-size: 22px;
 }
-
-
-/* CV */
-
 .cv-section {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 .cv-section h2 {
-    margin: 0 0 22px;
+    margin: 0 0 10px;
 
     font-size: 25px;
     font-weight: 700;
