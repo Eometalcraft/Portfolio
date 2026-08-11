@@ -446,3 +446,6 @@ footer {
     left: 0 !important;
     transform: translateX(-100px) translateY(100px) !important;
 }
+.profile-info {
+    transform: translateX(-100px) !important;
+}
