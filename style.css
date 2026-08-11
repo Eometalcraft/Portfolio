@@ -35,6 +35,7 @@ body {
 .identity {
     display: flex;
     align-items: center;
+
     gap: 12px;
 
     white-space: nowrap;
@@ -140,13 +141,11 @@ body {
 
 .profile {
     display: flex;
-  align-items: flex-start;
-    gap: 45px;
-    margin-bottom: 130px;
-}
+    align-items: flex-start;
 
-.profile-info {
-    margin-top: 280px;
+    gap: 45px;
+
+    margin-bottom: 130px;
 }
 
 .profile img {
@@ -156,6 +155,10 @@ body {
     height: 430px;
 
     object-fit: cover;
+}
+
+.profile-info {
+    margin-top: 200px;
 }
 
 .profile-info h1 {
@@ -169,20 +172,45 @@ body {
     margin-left: 10px;
 }
 
-.profile-info p {
+.profile-info > p {
     margin: 0;
 
     font-size: 22px;
 }
-..cv-section {
+
+
+/* CONTACT */
+
+.profile-info .contact {
+    margin-top: 28px;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.profile-info .contact a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.profile-info .contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CV
+   ========================= */
+
+.cv-section {
     margin-bottom: 60px;
 }
+
 .cv-section h2 {
     margin: 0 0 10px;
 
     font-size: 25px;
     font-weight: 700;
-    
 }
 
 .cv-row {
@@ -260,7 +288,7 @@ footer {
     }
 
     .hero {
-        width: 80%;
+        width: 60%;
     }
 
     .about {
@@ -303,11 +331,12 @@ footer {
     }
 
     .navigation {
+        position: static;
+
         width: 100%;
 
-        margin-left: 0;
-
         gap: 20px;
+
         flex-wrap: wrap;
     }
 
@@ -317,11 +346,13 @@ footer {
 
     .hero {
         width: 60%;
+
         margin-top: 30px;
     }
 
     .about {
         width: 100%;
+
         margin-top: 30px;
     }
 
@@ -337,16 +368,25 @@ footer {
         height: auto;
     }
 
+    .profile-info {
+        margin-top: 0;
+    }
+
     .profile-info h1 {
         font-size: 22px;
     }
 
-    .profile-info p {
+    .profile-info > p {
         font-size: 17px;
+    }
+
+    .profile-info .contact {
+        font-size: 16px;
     }
 
     .cv-row {
         grid-template-columns: 65px 1fr;
+
         column-gap: 10px;
     }
 
@@ -359,24 +399,4 @@ footer {
     .present-info {
         margin-left: 0;
     }
-}
-.navigation {
-    position: absolute;
-    right: 3.2vw;
-    top: 48px;
-}
-
-.profile-info .contact {
-    margin-top: 28px;
-    font-size: 18px;
-    line-height: 1.7;
-}
-
-.profile-info .contact a {
-    color: #111111;
-    text-decoration: none;
-}
-
-.profile-info .contact a:hover {
-    text-decoration: underline;
 }
