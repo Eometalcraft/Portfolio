@@ -162,8 +162,8 @@ body {
 .profile-info {
     margin-top: 200px;
     position: relative;
-    top: 50px;
-    transform: translateX(-40px);
+    top: 70px;
+    transform: translateX(-20px);
 }
 
 .profile-info h1 {
