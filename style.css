@@ -519,3 +519,51 @@ footer {
         margin-left: 0;
     }
 }
+
+/* =========================
+   WORKS DROPDOWN FIX
+   ========================= */
+
+.works-menu {
+    position: relative;
+}
+
+.works-dropdown {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 150px;
+    padding: 10px;
+
+    background: rgba(55, 55, 55, 0.78);
+
+    z-index: 100;
+}
+
+.works-menu:hover .works-dropdown {
+    display: block;
+}
+
+.works-dropdown a {
+    display: block;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    line-height: 1.7;
+    white-space: normal;
+}
+
+.works-dropdown a + a {
+    margin-top: 3px;
+}
+
+.works-dropdown .two-line {
+    line-height: 1.15;
+}
