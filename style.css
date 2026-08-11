@@ -494,10 +494,9 @@ footer {
     }
 
     .profile-info {
-        margin-top: 0;
-
-        transform: none;
-    }
+    margin-top: 260px;
+    transform: translateX(20px);
+}
 
     .profile-info h1 {
         font-size: 22px;
