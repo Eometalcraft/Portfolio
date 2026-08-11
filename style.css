@@ -159,14 +159,23 @@ body {
     object-fit: cover;
 }
 
+
+/* 프로필 글 전체 위치 */
+
 .profile-info {
     margin-top: 200px;
+
     position: relative;
-    transform: translate(-20px, 50px);
+
+    /* 사진과 글 사이 거리 */
+    transform: translateX(-20px);
 }
 
+
+/* 이름 */
+
 .profile-info h1 {
-    margin: 0 0 18px;
+    margin: 0 0 10px;
 
     font-size: 26px;
     font-weight: 700;
@@ -175,6 +184,9 @@ body {
 .profile-info h1 span {
     margin-left: 10px;
 }
+
+
+/* Born in Seoul */
 
 .profile-info > p {
     margin: 0;
@@ -188,7 +200,7 @@ body {
    ========================= */
 
 .profile-info .contact {
-    margin-top: 28px;
+    margin-top: 20px;
 
     font-size: 18px;
     line-height: 1.7;
@@ -208,15 +220,16 @@ body {
    CV
    ========================= */
 
-/* 
-   각 섹션 사이의 간격
-   Education
-   ↓ 90px
-   Present
-   ↓ 90px
-   Group Exhibition
-   ↓ 90px
-   Awards
+/*
+각 섹션 사이의 간격
+
+Education
+↓ 90px
+Present
+↓ 90px
+Group Exhibition
+↓ 90px
+Awards
 */
 
 .cv-section {
@@ -224,10 +237,13 @@ body {
     padding-bottom: 90px;
 }
 
+
 /* 마지막 Awards 뒤에는 추가 여백 없음 */
+
 .cv-section:last-child {
     padding-bottom: 0;
 }
+
 
 .cv-section h2 {
     margin: 0 0 10px;
@@ -248,7 +264,9 @@ body {
     margin: 0;
 }
 
+
 /* 같은 섹션 안의 다음 연도 항목 */
+
 .cv-row + .cv-row {
     margin-top: 14px;
 }
@@ -265,7 +283,9 @@ body {
 }
 
 
-/* Present */
+/* =========================
+   PRESENT
+   ========================= */
 
 .present-info {
     margin-left: 115px;
@@ -407,9 +427,10 @@ footer {
 
     .profile-info {
         margin-top: 0;
+
         transform: none;
     }
-    
+
     .profile-info h1 {
         font-size: 22px;
     }
@@ -437,15 +458,4 @@ footer {
     .present-info {
         margin-left: 0;
     }
-}
-
-.profile-info {
-    margin-top: 0 !important;
-    position: relative !important;
-    top: 0 !important;
-    left: 0 !important;
-    transform: translateX(-100px) translateY(100px) !important;
-}
-.profile-info {
-    transform: translateX(-100px) !important;
 }
