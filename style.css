@@ -548,3 +548,7 @@ footer {
         width: 150px;
     }
 }
+
+body {
+    background: pink !important;
+}
