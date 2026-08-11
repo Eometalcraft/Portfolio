@@ -7,16 +7,6 @@ html {
     padding: 0;
 }
 
-<script>
-    const worksMenu = document.querySelector('.works-menu');
-    const worksLink = document.querySelector('.works-link');
-
-    worksLink.addEventListener('click', function (event) {
-        event.preventDefault();
-        worksMenu.classList.toggle('open');
-    });
-</script>
-
 body {
     margin: 0;
     padding: 0 3.2vw;
@@ -45,7 +35,6 @@ body {
 .identity {
     display: flex;
     align-items: center;
-
     gap: 12px;
 
     white-space: nowrap;
@@ -89,7 +78,6 @@ body {
 
     display: flex;
     align-items: center;
-
     gap: 65px;
 
     white-space: nowrap;
@@ -137,11 +125,12 @@ body {
 
     background: rgba(55, 55, 55, 0.78);
 
-    z-index: 100;
+    z-index: 999;
 }
 
-.works-menu:hover .works-dropdown,
-.works-menu.open .works-dropdown {
+/* PC : 마우스를 올렸을 때 */
+
+.works-menu:hover .works-dropdown {
     display: block;
 }
 
@@ -179,7 +168,6 @@ body {
 
 .hero {
     width: 60%;
-
     margin: 70px auto 0;
 }
 
@@ -226,14 +214,13 @@ body {
 }
 
 
-/* 프로필 글 전체 위치 */
+/* 프로필 글 위치 */
 
 .profile-info {
     margin-top: 260px;
 
     position: relative;
 
-    /* 사진과 글 사이 좌우 위치 */
     transform: translateX(20px);
 }
 
@@ -286,32 +273,14 @@ body {
    CV
    ========================= */
 
-/*
-각 섹션 사이의 간격
-
-Education
-↓ 90px
-Present
-↓ 90px
-Group Exhibition
-↓ 90px
-Awards
-*/
-
 .cv-section {
     margin: 0;
     padding-bottom: 90px;
 }
 
-
-/* 마지막 Awards 뒤에는 추가 여백 없음 */
-
 .cv-section:last-child {
     padding-bottom: 0;
 }
-
-
-/* 제목 */
 
 .cv-section h2 {
     margin: 0 0 10px;
@@ -319,9 +288,6 @@ Awards
     font-size: 25px;
     font-weight: 700;
 }
-
-
-/* 연도 + 내용 */
 
 .cv-row {
     display: grid;
@@ -331,9 +297,6 @@ Awards
 
     margin: 0;
 }
-
-
-/* 같은 섹션 안의 다음 연도 */
 
 .cv-row + .cv-row {
     margin-top: 14px;
@@ -471,13 +434,11 @@ footer {
 
     .hero {
         width: 60%;
-
         margin-top: 30px;
     }
 
     .about {
         width: 100%;
-
         margin-top: 30px;
     }
 
@@ -494,9 +455,9 @@ footer {
     }
 
     .profile-info {
-    margin-top: 260px;
-    transform: translateX(20px);
-}
+        margin-top: 0;
+        transform: none;
+    }
 
     .profile-info h1 {
         font-size: 22px;
@@ -512,7 +473,6 @@ footer {
 
     .cv-row {
         grid-template-columns: 65px 1fr;
-
         column-gap: 10px;
     }
 
@@ -526,17 +486,7 @@ footer {
         margin-left: 0;
     }
 
-
-    /* 모바일 Works */
-
     .works-dropdown {
         width: 150px;
     }
-}
-
-/* WORKS DROPDOWN */
-
-.works-menu:hover .works-dropdown,
-.works-menu.open .works-dropdown {
-    display: block;
 }
