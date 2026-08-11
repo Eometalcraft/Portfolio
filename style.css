@@ -533,3 +533,10 @@ footer {
         width: 150px;
     }
 }
+
+/* WORKS DROPDOWN */
+
+.works-menu:hover .works-dropdown,
+.works-menu.open .works-dropdown {
+    display: block;
+}
