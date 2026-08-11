@@ -369,3 +369,18 @@ footer {
     right: 3.2vw;
     top: 48px;
 }
+
+.profile-info .contact {
+    margin-top: 28px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.profile-info .contact a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.profile-info .contact a:hover {
+    text-decoration: underline;
+}
