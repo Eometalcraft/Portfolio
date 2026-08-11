@@ -227,7 +227,7 @@ body {
 /* 프로필 글 전체 위치 */
 
 .profile-info {
-    margin-top: 360px; /* 세로 */
+    margin-top: 300px; /* 세로 */
     position: relative;
     transform: translateX(20); /* 가로 */
 }
