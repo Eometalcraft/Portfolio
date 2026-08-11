@@ -163,9 +163,9 @@ body {
 /* 프로필 글 전체 위치 */
 
 .profile-info {
-    margin-top: 250px;       /* 위아래 */
+    margin-top: 230px; /* 세로 */
     position: relative;
-    transform: translateX(0px); /* 좌우 */
+    transform: translateX(10); /* 가로*/
 }
 
 /* 이름 */
