@@ -116,7 +116,7 @@ body {
 }
 
 
-/* 마우스를 올리기 전에는 숨김 */
+/* 작품 목록 */
 
 .works-dropdown {
     display: none;
@@ -128,15 +128,24 @@ body {
 
     width: 150px;
 
-    padding: 10px 10px;
+    padding: 10px;
 
     background: rgba(55, 55, 55, 0.78);
+
+    z-index: 100;
 }
 
 
-/* Works에 마우스를 올리면 표시 */
+/* PC : 마우스를 올렸을 때 */
 
 .works-menu:hover .works-dropdown {
+    display: block;
+}
+
+
+/* 타블렛 : Works를 눌렀을 때 */
+
+.works-menu:focus-within .works-dropdown {
     display: block;
 }
 
@@ -147,6 +156,7 @@ body {
     display: block;
 
     color: #ffffff;
+    text-decoration: none;
 
     font-size: 20px;
     font-weight: 400;
@@ -156,8 +166,13 @@ body {
     white-space: normal;
 }
 
+.works-dropdown a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
 
-/* 작품명 사이의 간격 */
+
+/* 작품명 사이 간격 */
 
 .works-dropdown a + a {
     margin-top: 3px;
@@ -170,6 +185,7 @@ body {
     line-height: 1.15;
     margin-top: 3px;
 }
+
 
 /* =========================
    HOME
@@ -227,10 +243,14 @@ body {
 /* 프로필 글 전체 위치 */
 
 .profile-info {
-    margin-top: 260px; /* 세로 */
+    margin-top: 260px;
+
     position: relative;
-    transform: translateX(20); /* 가로 */
+
+    /* 사진과 글 사이 좌우 위치 */
+    transform: translateX(20px);
 }
+
 
 /* 이름 */
 
@@ -305,6 +325,8 @@ Awards
 }
 
 
+/* 제목 */
+
 .cv-section h2 {
     margin: 0 0 10px;
 
@@ -325,7 +347,7 @@ Awards
 }
 
 
-/* 같은 섹션 안의 다음 연도 항목 */
+/* 같은 섹션 안의 다음 연도 */
 
 .cv-row + .cv-row {
     margin-top: 14px;
@@ -518,52 +540,11 @@ footer {
     .present-info {
         margin-left: 0;
     }
-}
 
-/* =========================
-   WORKS DROPDOWN FIX
-   ========================= */
 
-.works-menu {
-    position: relative;
-}
+    /* 모바일 Works */
 
-.works-dropdown {
-    display: none;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    width: 150px;
-    padding: 10px;
-
-    background: rgba(55, 55, 55, 0.78);
-
-    z-index: 100;
-}
-
-.works-menu:hover .works-dropdown {
-    display: block;
-}
-
-.works-dropdown a {
-    display: block;
-
-    color: #ffffff;
-    text-decoration: none;
-
-    font-size: 20px;
-    font-weight: 400;
-
-    line-height: 1.7;
-    white-space: normal;
-}
-
-.works-dropdown a + a {
-    margin-top: 3px;
-}
-
-.works-dropdown .two-line {
-    line-height: 1.15;
+    .works-dropdown {
+        width: 150px;
+    }
 }
