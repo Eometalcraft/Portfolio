@@ -163,12 +163,10 @@ body {
 /* 프로필 글 전체 위치 */
 
 .profile-info {
-    margin-top: 230px;
-
+    margin-top: 200px;
     position: relative;
 
-    /* 사진과 글 사이 거리 */
-    transform: translateX(-10px);
+    transform: translate(-10px, 30px);
 }
 
 
