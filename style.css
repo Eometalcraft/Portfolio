@@ -7,6 +7,16 @@ html {
     padding: 0;
 }
 
+<script>
+    const worksMenu = document.querySelector('.works-menu');
+    const worksLink = document.querySelector('.works-link');
+
+    worksLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        worksMenu.classList.toggle('open');
+    });
+</script>
+
 body {
     margin: 0;
     padding: 0 3.2vw;
@@ -115,19 +125,14 @@ body {
     position: relative;
 }
 
-
-/* 작품 목록 */
-
 .works-dropdown {
     display: none;
 
     position: absolute;
-
-    top: 100%;
+    top: calc(100% + 5px);
     left: 0;
 
     width: 150px;
-
     padding: 10px;
 
     background: rgba(55, 55, 55, 0.78);
@@ -135,22 +140,10 @@ body {
     z-index: 100;
 }
 
-
-/* PC : 마우스를 올렸을 때 */
-
-.works-menu:hover .works-dropdown {
+.works-menu:hover .works-dropdown,
+.works-menu.open .works-dropdown {
     display: block;
 }
-
-
-/* 타블렛 : Works를 눌렀을 때 */
-
-.works-menu:focus-within .works-dropdown {
-    display: block;
-}
-
-
-/* 작품명 */
 
 .works-dropdown a {
     display: block;
@@ -171,19 +164,12 @@ body {
     text-decoration: none;
 }
 
-
-/* 작품명 사이 간격 */
-
 .works-dropdown a + a {
     margin-top: 3px;
 }
 
-
-/* Not Gold, Not Emerald */
-
 .works-dropdown .two-line {
     line-height: 1.15;
-    margin-top: 3px;
 }
 
 
