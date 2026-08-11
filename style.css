@@ -160,7 +160,7 @@ body {
 }
 
 .profile-info {
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 .profile-info h1 {
@@ -209,17 +209,17 @@ body {
 /* 
    각 섹션 사이의 간격
    Education
-   ↓ 70px
+   ↓ 90px
    Present
-   ↓ 70px
+   ↓ 90px
    Group Exhibition
-   ↓ 70px
+   ↓ 90px
    Awards
 */
 
 .cv-section {
     margin: 0;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
 }
 
 /* 마지막 Awards 뒤에는 추가 여백 없음 */
