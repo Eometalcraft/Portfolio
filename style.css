@@ -145,7 +145,7 @@ body {
     display: flex;
     align-items: flex-start;
 
-    gap: 45px;
+    gap: 30px;
 
     margin-bottom: 130px;
 }
@@ -162,7 +162,7 @@ body {
 .profile-info {
     margin-top: 200px;
     position: relative;
-    top: 50px;
+    top: 60px;
 }
 
 .profile-info h1 {
