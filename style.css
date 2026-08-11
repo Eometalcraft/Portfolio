@@ -163,7 +163,7 @@ body {
     margin-top: 200px;
     position: relative;
     top: 50px;
-    margin-left: -25px;
+    transform: translateX(-40px);
 }
 
 .profile-info h1 {
@@ -406,9 +406,10 @@ footer {
         height: auto;
     }
 
-    .profile-info {
-        margin-top: 0;
-    }
+.profile-info {
+    margin-top: 0;
+    transform: none;
+}
 
     .profile-info h1 {
         font-size: 22px;
