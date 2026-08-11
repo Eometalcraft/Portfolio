@@ -108,6 +108,70 @@ body {
 
 
 /* =========================
+   WORKS DROPDOWN
+   ========================= */
+
+.works-menu {
+    position: relative;
+}
+
+
+/* 마우스를 올리기 전에는 숨김 */
+
+.works-dropdown {
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 150px;
+
+    padding: 10px 10px;
+
+    background: rgba(55, 55, 55, 0.78);
+}
+
+
+/* Works에 마우스를 올리면 표시 */
+
+.works-menu:hover .works-dropdown {
+    display: block;
+}
+
+
+/* 작품명 */
+
+.works-dropdown a {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    white-space: normal;
+}
+
+
+/* 작품명 사이의 간격 */
+
+.works-dropdown a + a {
+    margin-top: 3px;
+}
+
+
+/* Not Gold, Not Emerald */
+
+.works-dropdown .two-line {
+    line-height: 1.15;
+    margin-top: 3px;
+}
+
+/* =========================
    HOME
    ========================= */
 
