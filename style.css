@@ -160,7 +160,9 @@ body {
 }
 
 .profile-info {
-    margin-top: 250px;
+    margin-top: 200px;
+    position: relative;
+    top: 50px;
 }
 
 .profile-info h1 {
