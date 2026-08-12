@@ -521,7 +521,9 @@ footer {
     }
 
 
-    .identity a,
+/* Eom, Nayun 링크 스타일 고정 */
+
+.identity a,
 .identity a:link,
 .identity a:visited,
 .identity a:hover,
@@ -529,6 +531,8 @@ footer {
 .identity a:active {
     color: #111111 !important;
     text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 
 .identity a strong {
