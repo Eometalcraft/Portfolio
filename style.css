@@ -523,16 +523,20 @@ footer {
 
 /* Eom, Nayun 링크 스타일 고정 */
 
-.identity a,
-.identity a:link,
-.identity a:visited,
-.identity a:hover,
-.identity a:focus,
-.identity a:active {
+.identity-link {
     color: #111111 !important;
     text-decoration: none !important;
 }
 
-.identity a strong {
+.identity-link:link,
+.identity-link:visited,
+.identity-link:hover,
+.identity-link:focus,
+.identity-link:active {
+    color: #111111 !important;
+    text-decoration: none !important;
+}
+
+.identity-link strong {
     color: #111111 !important;
 }
