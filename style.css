@@ -531,11 +531,8 @@ footer {
 .identity a:active {
     color: #111111 !important;
     text-decoration: none !important;
-    border-bottom: none !important;
-    box-shadow: none !important;
 }
 
 .identity a strong {
     color: #111111 !important;
-    text-decoration: none !important;
 }
