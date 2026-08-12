@@ -520,3 +520,11 @@ footer {
         width: 150px;
     }
 }
+
+.identity a,
+.identity a:visited,
+.identity a:hover,
+.identity a:active {
+    color: #111111;
+    text-decoration: none;
+}
