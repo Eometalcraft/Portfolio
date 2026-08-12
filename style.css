@@ -519,12 +519,19 @@ footer {
     .works-dropdown {
         width: 150px;
     }
-}
 
-.identity a,
+
+    .identity a,
+.identity a:link,
 .identity a:visited,
 .identity a:hover,
+.identity a:focus,
 .identity a:active {
-    color: #111111;
-    text-decoration: none;
+    color: #111111 !important;
+    text-decoration: none !important;
+}
+
+.identity a strong {
+    color: #111111 !important;
+    text-decoration: none !important;
 }
