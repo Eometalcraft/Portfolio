@@ -548,3 +548,221 @@ footer {
         width: 150px;
     }
 }
+
+/* =========================
+   WORKS PAGE
+========================= */
+
+.works-page {
+    width: 100%;
+}
+
+
+/* 작품 이미지 영역 */
+
+.work-gallery {
+    width: 88%;
+    max-width: 1400px;
+
+    margin: 55px auto 0;
+}
+
+
+/* 이미지가 바뀌어도 전체 영역이 움직이지 않도록 고정 */
+
+.work-image-frame {
+    width: 100%;
+    height: min(62vw, 680px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.work-image-frame img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   DOTS
+========================= */
+
+.work-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 8px;
+}
+
+
+.work-dot {
+    width: 10px;
+    height: 10px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #bdbdbd;
+
+    cursor: pointer;
+}
+
+
+.work-dot.active {
+    background: #555555;
+}
+
+
+/* =========================
+   WORK TITLE
+========================= */
+
+.work-heading {
+    display: flex;
+    align-items: baseline;
+
+    gap: 28px;
+
+    margin-top: 65px;
+    padding-left: 10px;
+}
+
+
+.work-heading h1 {
+    margin: 0;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.work-heading p {
+    margin: 0;
+
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+/* =========================
+   WORK DESCRIPTION
+========================= */
+
+.work-description {
+    margin-top: 20px;
+    padding-left: 20px;
+
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+
+.work-description p {
+    margin: 0;
+}
+
+
+.work-description #work-text {
+    margin-top: 25px;
+}
+
+
+/* =========================
+   WORKS ACTIVE LINK
+========================= */
+
+.navigation .works-link,
+.navigation .works-link:link,
+.navigation .works-link:visited,
+.navigation .works-link:hover,
+.navigation .works-link:focus,
+.navigation .works-link:active {
+    color: #111111 !important;
+    text-decoration: none !important;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .work-gallery {
+        width: 100%;
+
+        margin-top: 30px;
+    }
+
+
+    .work-image-frame {
+        height: 65vw;
+    }
+
+
+    .work-dots {
+        margin-top: 10px;
+    }
+
+
+    .work-dot {
+        width: 9px;
+        height: 9px;
+    }
+
+
+    .work-heading {
+        display: block;
+
+        margin-top: 40px;
+
+        padding-left: 0;
+    }
+
+
+    .work-heading h1 {
+        font-size: 22px;
+
+        white-space: normal;
+    }
+
+
+    .work-heading p {
+        margin-top: 8px;
+
+        font-size: 17px;
+    }
+
+
+    .work-description {
+        padding-left: 0;
+
+        margin-top: 20px;
+
+        font-size: 17px;
+        line-height: 1.45;
+    }
+
+
+    .work-description #work-text {
+        margin-top: 20px;
+    }
+
+}
