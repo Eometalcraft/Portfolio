@@ -1,0 +1,247 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sinsuro 107 | Eom, Nayun</title>
+
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="identity">
+
+            <a href="index.html" class="identity-link">
+                <strong>Eom, Nayun</strong>
+            </a>
+
+            <span>|</span>
+
+            <span>Contemporary Jewelry Artist</span>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="about.html">About</a>
+
+
+            <!-- WORKS -->
+            <div class="works-menu">
+
+                <a href="works.html" class="works-link active">Works</a>
+
+                <div class="works-dropdown">
+
+                    <a href="works.html">Thorns</a>
+
+                    <a href="sinsuro-107.html">Sinsuro-107</a>
+
+                    <a href="#" class="two-line">
+                        Not Gold,<br>
+                        Not Emerald
+                    </a>
+
+                    <a href="#">Somoku</a>
+
+                </div>
+
+            </div>
+
+
+            <a href="#">Exhibition</a>
+
+            <a href="#">Records</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- WORK -->
+    <main class="works-page">
+
+        <section class="work-gallery">
+
+            <!-- IMAGE -->
+            <div class="work-image-frame">
+
+                <img
+                    id="work-image"
+                    src="images/works/sinsuro-107-01.jpg"
+                    alt="Sinsuro 107 - 1"
+                >
+
+            </div>
+
+
+            <!-- DOTS -->
+            <div class="work-dots">
+
+                <button
+                    class="work-dot active"
+                    data-index="0"
+                    aria-label="Sinsuro 107 - 1">
+                </button>
+
+                <button
+                    class="work-dot"
+                    data-index="1"
+                    aria-label="Sinsuro 107 - 2">
+                </button>
+
+                <button
+                    class="work-dot"
+                    data-index="2"
+                    aria-label="Sinsuro 107 - 2, Wearing">
+                </button>
+
+            </div>
+
+
+            <!-- TITLE -->
+            <div class="work-heading">
+
+                <h1 id="work-title">
+                    Sinsuro 107 - 1
+                </h1>
+
+                <p id="work-material">
+                    2025 / Resin
+                </p>
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+            <div class="work-description">
+
+                <p id="work-intro">
+                    At the end of a cold winter in February, I walked around my home, searching for plants. I thought I would not find anything in the frozen landscape.
+                </p>
+
+                <p id="work-text">
+                    But acorns hidden under fallen leaves, cherries grown on unreachable branches, magnolia branches discarded after pruning, and seeds from broken grasses beneath the flowerbed revealed themselves. Many plants that had always existed around me, quietly hidden.<br><br>
+                    While handling and observing these, I began to think that various plant species coexisting with one another resembles the apartment complex itself. Like 'Sinsuro 107,' where diverse people gather and live together, these plants also share the same space while maintaining their own identities.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        © 2026. Eom Nayun All rights reserved.
+
+    </footer>
+
+
+    <!-- WORK SLIDER -->
+    <script>
+
+        const works = [
+
+            {
+                image: "images/works/sinsuro-107-01.jpg",
+
+                title: "Sinsuro 107 - 1",
+
+                material: "2025 / Resin",
+
+                intro: `At the end of a cold winter in February, I walked around my home, searching for plants. I thought I would not find anything in the frozen landscape.`,
+
+                text: `But acorns hidden under fallen leaves, cherries grown on unreachable branches, magnolia branches discarded after pruning, and seeds from broken grasses beneath the flowerbed revealed themselves. Many plants that had always existed around me, quietly hidden.<br><br>
+While handling and observing these, I began to think that various plant species coexisting with one another resembles the apartment complex itself. Like 'Sinsuro 107,' where diverse people gather and live together, these plants also share the same space while maintaining their own identities.`
+            },
+
+
+            {
+                image: "images/works/sinsuro-107-02.jpg",
+
+                title: "Sinsuro 107 - 2",
+
+                material: "2025 / Resin, Mono-filament, Dye, Brass",
+
+                intro: `The Sinsuro 107 series began with plants collected from the apartment complex where I have grown up without moving even once.`,
+
+                text: `After spending February and early March, I suddenly found myself surrounded by warm breezes. I wondered, 'When did the time pass so much?' Cherry blossoms began to bloom, followed by azaleas, tulips, and various other flowers that continued to bloom and wither in their own cycles.<br><br>
+I wanted to preserve the overflowing vitality, happiness, and warmth of the season for a long time. The desire became the beginning of 'Sinsuro 107 - 2.'`
+            },
+
+
+            {
+                image: "images/works/sinsuro-107-03.jpg",
+
+                title: "Sinsuro 107 - 2",
+
+                material: "2025 / Resin, Mono-filament, Dye, Brass",
+
+                intro: "",
+
+                text: `Picture of me, Wearing my brooch!`
+            }
+
+        ];
+
+
+        const image = document.getElementById("work-image");
+        const title = document.getElementById("work-title");
+        const material = document.getElementById("work-material");
+        const intro = document.getElementById("work-intro");
+        const text = document.getElementById("work-text");
+        const dots = document.querySelectorAll(".work-dot");
+
+
+        function showWork(index) {
+
+            const work = works[index];
+
+            image.src = work.image;
+            image.alt = work.title;
+
+            title.textContent = work.title;
+            material.textContent = work.material;
+
+            intro.innerHTML = work.intro;
+            text.innerHTML = work.text;
+
+
+            dots.forEach((dot, i) => {
+
+                dot.classList.toggle("active", i === index);
+
+            });
+
+        }
+
+
+        dots.forEach(dot => {
+
+            dot.addEventListener("click", function () {
+
+                const index = Number(this.dataset.index);
+
+                showWork(index);
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+```
