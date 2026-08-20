@@ -571,6 +571,8 @@ footer {
 /* 이미지가 바뀌어도 전체 영역이 움직이지 않도록 고정 */
 
 .work-image-frame {
+    position: relative;
+
     width: 100%;
     height: min(46vw, 470px);
 
@@ -590,6 +592,59 @@ footer {
     height: auto;
 
     object-fit: contain;
+}
+
+
+/* =========================
+   WORK IMAGE ARROWS
+   ========================= */
+
+.work-arrow {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 70px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #999999;
+
+    font-family: Arial, sans-serif;
+    font-size: 55px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+
+.work-arrow:hover {
+    color: #555555;
+}
+
+
+.work-arrow-left {
+    left: 12%;
+}
+
+
+.work-arrow-right {
+    right: 12%;
+}
+
+
+.work-arrow.hidden {
+    display: none;
 }
 
 
@@ -714,6 +769,24 @@ footer {
 
     .work-image-frame {
         height: 65vw;
+    }
+
+
+    .work-arrow {
+        width: 35px;
+        height: 55px;
+
+        font-size: 42px;
+    }
+
+
+    .work-arrow-left {
+        left: 0;
+    }
+
+
+    .work-arrow-right {
+        right: 0;
     }
 
 
