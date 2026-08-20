@@ -7,7 +7,7 @@
 
     <title>Sinsuro 107 | Eom, Nayun</title>
 
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 
 <body>
@@ -70,37 +70,50 @@
 
         <section class="work-gallery">
 
+
             <!-- IMAGE -->
             <div class="work-image-frame">
+
+                <!-- LEFT ARROW -->
+                <button
+                    id="work-prev"
+                    class="work-arrow work-arrow-left"
+                    aria-label="Previous image">
+                    ‹
+                </button>
+
 
                 <img
                     id="work-image"
                     src="images/works/sinsuro-107-1.png"
-                    alt="Sinsuro-107-1"
+                    alt="Sinsuro 107 - 1"
                 >
+
+
+                <!-- RIGHT ARROW -->
+                <button
+                    id="work-next"
+                    class="work-arrow work-arrow-right"
+                    aria-label="Next image">
+                    ›
+                </button>
 
             </div>
 
 
-            <!-- DOTS -->
+            <!-- DOTS : 작품 단위 -->
             <div class="work-dots">
 
                 <button
                     class="work-dot active"
                     data-index="0"
-                    aria-label="Sinsuro-107-1">
+                    aria-label="Sinsuro 107 - 1">
                 </button>
 
                 <button
                     class="work-dot"
                     data-index="1"
-                    aria-label="Sinsuro-107-2">
-                </button>
-
-                <button
-                    class="work-dot"
-                    data-index="2"
-                    aria-label="Sinsuro-107-3">
+                    aria-label="Sinsuro 107 - 2">
                 </button>
 
             </div>
@@ -129,6 +142,7 @@
 
                 <p id="work-text">
                     But acorns hidden under fallen leaves, cherries grown on unreachable branches, magnolia branches discarded after pruning, and seeds from broken grasses beneath the flowerbed revealed themselves. Many plants that had always existed around me, quietly hidden.<br><br>
+
                     While handling and observing these, I began to think that various plant species coexisting with one another resembles the apartment complex itself. Like 'Sinsuro 107,' where diverse people gather and live together, these plants also share the same space while maintaining their own identities.
                 </p>
 
@@ -153,7 +167,9 @@
         const works = [
 
             {
-                image: "images/works/sinsuro-107-1.png",
+                images: [
+                    "images/works/sinsuro-107-1.png"
+                ],
 
                 title: "Sinsuro 107 - 1",
 
@@ -162,12 +178,16 @@
                 intro: `At the end of a cold winter in February, I walked around my home, searching for plants. I thought I would not find anything in the frozen landscape.`,
 
                 text: `But acorns hidden under fallen leaves, cherries grown on unreachable branches, magnolia branches discarded after pruning, and seeds from broken grasses beneath the flowerbed revealed themselves. Many plants that had always existed around me, quietly hidden.<br><br>
+
 While handling and observing these, I began to think that various plant species coexisting with one another resembles the apartment complex itself. Like 'Sinsuro 107,' where diverse people gather and live together, these plants also share the same space while maintaining their own identities.`
             },
 
 
             {
-                image: "images/works/sinsuro-107-2.jpg",
+                images: [
+                    "images/works/sinsuro-107-2.jpg",
+                    "images/works/sinsuro-107-3.jpg"
+                ],
 
                 title: "Sinsuro 107 - 2",
 
@@ -176,55 +196,150 @@ While handling and observing these, I began to think that various plant species 
                 intro: `The Sinsuro 107 series began with plants collected from the apartment complex where I have grown up without moving even once.`,
 
                 text: `After spending February and early March, I suddenly found myself surrounded by warm breezes. I wondered, 'When did the time pass so much?' Cherry blossoms began to bloom, followed by azaleas, tulips, and various other flowers that continued to bloom and wither in their own cycles.<br><br>
+
 I wanted to preserve the overflowing vitality, happiness, and warmth of the season for a long time. The desire became the beginning of 'Sinsuro 107 - 2.'`
-            },
-
-
-            {
-                image: "images/works/sinsuro-107-3.jpg",
-
-                title: "Sinsuro 107 - 2",
-
-                material: "2025 / Resin, Mono-filament, Dye, Brass",
-
-                intro: "",
-
-                text: `Picture of me, Wearing my brooch!`
             }
 
         ];
 
 
         const image = document.getElementById("work-image");
+
         const title = document.getElementById("work-title");
+
         const material = document.getElementById("work-material");
+
         const intro = document.getElementById("work-intro");
+
         const text = document.getElementById("work-text");
+
         const dots = document.querySelectorAll(".work-dot");
 
+        const prevButton = document.getElementById("work-prev");
+
+        const nextButton = document.getElementById("work-next");
+
+
+        let currentWork = 0;
+
+        let currentImage = 0;
+
+
+        /* =========================
+           WORK 표시
+           ========================= */
 
         function showWork(index) {
 
-            const work = works[index];
+            currentWork = index;
 
-            image.src = work.image;
+            currentImage = 0;
+
+            const work = works[currentWork];
+
+            image.src = work.images[currentImage];
+
             image.alt = work.title;
 
             title.textContent = work.title;
+
             material.textContent = work.material;
 
             intro.innerHTML = work.intro;
+
             text.innerHTML = work.text;
 
 
             dots.forEach((dot, i) => {
 
-                dot.classList.toggle("active", i === index);
+                dot.classList.toggle(
+                    "active",
+                    i === currentWork
+                );
 
             });
 
+
+            updateArrows();
+
         }
 
+
+        /* =========================
+           같은 작품의 사진 넘기기
+           ========================= */
+
+        function showImage(index) {
+
+            const work = works[currentWork];
+
+            currentImage = index;
+
+            image.src = work.images[currentImage];
+
+            image.alt = work.title;
+
+            updateArrows();
+
+        }
+
+
+        /* =========================
+           꺾쇠 상태
+           ========================= */
+
+        function updateArrows() {
+
+            const work = works[currentWork];
+
+            if (work.images.length <= 1) {
+
+                prevButton.classList.add("hidden");
+
+                nextButton.classList.add("hidden");
+
+                return;
+
+            }
+
+
+            prevButton.classList.remove("hidden");
+
+            nextButton.classList.remove("hidden");
+
+
+            /*
+             * 첫 번째 사진에서는 왼쪽 꺾쇠 숨김
+             * 마지막 사진에서는 오른쪽 꺾쇠 숨김
+             */
+
+            if (currentImage === 0) {
+
+                prevButton.classList.add("hidden");
+
+            } else {
+
+                prevButton.classList.remove("hidden");
+
+            }
+
+
+            if (currentImage === work.images.length - 1) {
+
+                nextButton.classList.add("hidden");
+
+            } else {
+
+                nextButton.classList.remove("hidden");
+
+            }
+
+        }
+
+
+        /* =========================
+           작품 DOT 클릭
+           ========================= */
 
         dots.forEach(dot => {
 
@@ -237,6 +352,45 @@ I wanted to preserve the overflowing vitality, happiness, and warmth of the seas
             });
 
         });
+
+
+        /* =========================
+           LEFT
+           ========================= */
+
+        prevButton.addEventListener("click", function () {
+
+            if (currentImage > 0) {
+
+                showImage(currentImage - 1);
+
+            }
+
+        });
+
+
+        /* =========================
+           RIGHT
+           ========================= */
+
+        nextButton.addEventListener("click", function () {
+
+            const work = works[currentWork];
+
+            if (currentImage < work.images.length - 1) {
+
+                showImage(currentImage + 1);
+
+            }
+
+        });
+
+
+        /* =========================
+           처음 표시
+           ========================= */
+
+        showWork(0);
 
     </script>
 
