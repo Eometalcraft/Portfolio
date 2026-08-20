@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Not Gold, Not Emerald | Eom, Nayun</title>
+
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="identity">
+
+            <a href="index.html" class="identity-link">
+                <strong>Eom, Nayun</strong>
+            </a>
+
+            <span>|</span>
+
+            <span>Contemporary Jewelry Artist</span>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="about.html">About</a>
+
+
+            <!-- WORKS -->
+            <div class="works-menu">
+
+                <a href="works.html" class="works-link active">Works</a>
+
+                <div class="works-dropdown">
+
+                    <a href="works.html">Thorns</a>
+
+                    <a href="sinsuro-107.html">Sinsuro-107</a>
+
+                    <a href="not-gold-not-emerald.html" class="two-line">
+                        Not Gold,<br>
+                        Not Emerald
+                    </a>
+
+                    <a href="#">Somoku</a>
+
+                </div>
+
+            </div>
+
+
+            <a href="#">Exhibition</a>
+
+            <a href="#">Records</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- WORK -->
+    <main class="works-page">
+
+        <section class="work-gallery">
+
+
+            <!-- IMAGE -->
+            <div class="work-image-frame">
+
+                <button
+                    class="work-arrow work-arrow-left"
+                    id="prev-image"
+                    aria-label="Previous image">
+                    ‹
+                </button>
+
+
+                <img
+                    id="work-image"
+                    src="images/works/NGNE-01.png"
+                    alt="Not Gold, Not Emerald"
+                >
+
+
+                <button
+                    class="work-arrow work-arrow-right"
+                    id="next-image"
+                    aria-label="Next image">
+                    ›
+                </button>
+
+            </div>
+
+
+            <!-- DOTS -->
+            <div class="work-dots">
+
+                <button
+                    class="work-dot active"
+                    data-index="0"
+                    aria-label="Not Gold, Not Emerald">
+                </button>
+
+                <button
+                    class="work-dot"
+                    data-index="1"
+                    aria-label="Fizz">
+                </button>
+
+                <button
+                    class="work-dot"
+                    data-index="2"
+                    aria-label="Revival">
+                </button>
+
+            </div>
+
+
+            <!-- TITLE -->
+            <div class="work-heading">
+
+                <h1 id="work-title">
+                    Not Gold, Not Emerald
+                </h1>
+
+                <p id="work-material">
+                    2025 / Soju bottle, Brass, 18K plated
+                </p>
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+            <div class="work-description">
+
+                <p id="work-intro">
+                    While studying jewelry design in high school and learning metal craft at university and graduate school, the works I created always carried the label of being “fake.”
+                </p>
+
+                <p id="work-text">
+                    Materials such as cubic zirconia, glass, and brass — the price of the material became the standard for determining authenticity.<br><br>
+                    But I questioned this idea. If the materials are considered “fake,” does that mean my work must also be defined as a fake without value?<br><br>
+                    The materials I use are not gold, nor are they emeralds.<br>
+                    However, my works contain my time, my skills, and the warmth of my hands.<br>
+                    The depth of form, technique, and meaning within them is no different from what is defined as “real.”<br><br>
+                    I believe that the concept of what makes jewelry “real” is determined not by the material itself, but by the intention and attitude behind it.<br><br>
+                    I want to speak to those who judge value only through visible price and brilliance.<br><br>
+                    “What you see is not gold, nor emerald.<br>
+                    But the technique, time, care, and meaning contained within it are my ‘real.’”
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        © 2026. Eom Nayun All rights reserved.
+
+    </footer>
+
+
+    <!-- WORK SLIDER -->
+    <script>
+
+        const works = [
+
+            /* =========================
+               NOT GOLD, NOT EMERALD
+               ========================= */
+
+            {
+                images: [
+                    "images/works/NGNE-01.png",
+                    "images/works/NGNE-02.png"
+                ],
+
+                title: "Not Gold, Not Emerald",
+
+                material: "2025 / Soju bottle, Brass, 18K plated",
+
+                intro: `While studying jewelry design in high school and learning metal craft at university and graduate school, the works I created always carried the label of being “fake.”`,
+
+                text: `Materials such as cubic zirconia, glass, and brass — the price of the material became the standard for determining authenticity.<br><br>
+But I questioned this idea. If the materials are considered “fake,” does that mean my work must also be defined as a fake without value?<br><br>
+The materials I use are not gold, nor are they emeralds.<br>
+However, my works contain my time, my skills, and the warmth of my hands.<br>
+The depth of form, technique, and meaning within them is no different from what is defined as “real.”<br><br>
+I believe that the concept of what makes jewelry “real” is determined not by the material itself, but by the intention and attitude behind it.<br><br>
+I want to speak to those who judge value only through visible price and brilliance.<br><br>
+“What you see is not gold, nor emerald.<br>
+But the technique, time, care, and meaning contained within it are my ‘real.’”`
+            },
+
+
+            /* =========================
+               FIZZ
+               ========================= */
+
+            {
+                images: [
+                    "images/works/Fizz-01.jpg",
+                    "images/works/Fizz-02.jpg"
+                ],
+
+                title: "Fizz",
+
+                material: "2025 / Brass, Beer Bottle",
+
+                intro: `This brooch was inspired by the rising carbonation bubbles inside a beer bottle.`,
+
+                text: `Throughout the semester, I sought to expand my lapidary skills in a different direction.<br><br>
+Gemstones are often viewed as materials that are supported and held by metal through gem setting, but my goal was to reverse this relationship. For this work, I chose glass as an alternative material to precious gemstones, which are expensive and difficult to obtain. Glass is an accessible material found in everyday life and can also be recycled.<br><br>
+Since this work aimed to reverse the relationship between metal and glass, I worked on a wide glass surface to emphasize the presence of metal. To connect the two materials without using adhesives, I used rivets, a cold joining technique.`
+            },
+
+
+            /* =========================
+               REVIVAL
+               ========================= */
+
+            {
+                images: [
+                    "images/works/Revival-01.jpg",
+                    "images/works/Revival-02.jpg"
+                ],
+
+                title: "Revival",
+
+                material: "2025 / Glass, Black Oxide Finished Brass",
+
+                intro: `This work is a brooch created using the Habillé technique.`,
+
+                text: `Habillé is a French word meaning “to dress.” It refers to a technique of decorating a cameo by adding metal and gemstones on its surface, and it was popular in 19th-century France and the Victorian era.<br><br>
+I felt that the word “Revival” closely reflects the act of bringing this forgotten technique back into the world and allowing it to be seen again.<br><br>
+Although the piece broke twice during the making process, I restored it and gave it a new life.`
+            }
+
+        ];
+
+
+        /* =========================
+           ELEMENTS
+           ========================= */
+
+        const image = document.getElementById("work-image");
+        const title = document.getElementById("work-title");
+        const material = document.getElementById("work-material");
+        const intro = document.getElementById("work-intro");
+        const text = document.getElementById("work-text");
+
+        const dots = document.querySelectorAll(".work-dot");
+
+        const prevButton = document.getElementById("prev-image");
+        const nextButton = document.getElementById("next-image");
+
+
+        /* 현재 작품 / 현재 사진 */
+
+        let workIndex = 0;
+        let imageIndex = 0;
+
+
+        /* =========================
+           SHOW WORK
+           ========================= */
+
+        function showWork(index) {
+
+            workIndex = index;
+
+            imageIndex = 0;
+
+            const work = works[workIndex];
+
+            image.src = work.images[imageIndex];
+            image.alt = work.title;
+
+            title.textContent = work.title;
+            material.textContent = work.material;
+
+            intro.innerHTML = work.intro;
+            text.innerHTML = work.text;
+
+
+            dots.forEach((dot, i) => {
+
+                dot.classList.toggle(
+                    "active",
+                    i === workIndex
+                );
+
+            });
+
+
+            updateArrows();
+
+        }
+
+
+        /* =========================
+           SHOW IMAGE
+           ========================= */
+
+        function showImage(index) {
+
+            const work = works[workIndex];
+
+            imageIndex = index;
+
+            image.src = work.images[imageIndex];
+            image.alt = work.title;
+
+            updateArrows();
+
+        }
+
+
+        /* =========================
+           ARROWS
+           ========================= */
+
+        function updateArrows() {
+
+            /*
+             * 사진이 2장뿐이므로
+             * 첫 번째 사진에서는 왼쪽 숨김
+             * 두 번째 사진에서는 오른쪽 숨김
+             */
+
+            if (imageIndex === 0) {
+
+                prevButton.classList.add("hidden");
+
+            } else {
+
+                prevButton.classList.remove("hidden");
+
+            }
+
+
+            if (imageIndex === works[workIndex].images.length - 1) {
+
+                nextButton.classList.add("hidden");
+
+            } else {
+
+                nextButton.classList.remove("hidden");
+
+            }
+
+        }
+
+
+        /* 이전 사진 */
+
+        prevButton.addEventListener("click", function () {
+
+            if (imageIndex > 0) {
+
+                showImage(imageIndex - 1);
+
+            }
+
+        });
+
+
+        /* 다음 사진 */
+
+        nextButton.addEventListener("click", function () {
+
+            const work = works[workIndex];
+
+            if (imageIndex < work.images.length - 1) {
+
+                showImage(imageIndex + 1);
+
+            }
+
+        });
+
+
+        /* =========================
+           WORK DOTS
+           ========================= */
+
+        dots.forEach(dot => {
+
+            dot.addEventListener("click", function () {
+
+                const index = Number(
+                    this.dataset.index
+                );
+
+                showWork(index);
+
+            });
+
+        });
+
+
+        /* 초기 상태 */
+
+        showWork(0);
+
+    </script>
+
+</body>
+
+</html>
