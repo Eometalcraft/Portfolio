@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Somoku | Eom, Nayun</title>
+
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <header class="header">
+
+        <div class="identity">
+
+            <a href="index.html" class="identity-link">
+                <strong>Eom, Nayun</strong>
+            </a>
+
+            <span>|</span>
+
+            <span>Contemporary Jewelry Artist</span>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="about.html">About</a>
+
+
+            <!-- WORKS -->
+
+            <div class="works-menu">
+
+                <a href="works.html" class="works-link active">
+                    Works
+                </a>
+
+
+                <div class="works-dropdown">
+
+                    <a href="works.html">
+                        Thorns
+                    </a>
+
+                    <a href="sinsuro-107.html">
+                        Sinsuro-107
+                    </a>
+
+                    <a href="not-gold-not-emerald.html"
+                       class="two-line">
+                        Not Gold,<br>
+                        Not Emerald
+                    </a>
+
+                    <a href="somoku.html">
+                        Somoku
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <a href="#">
+                Exhibition
+            </a>
+
+            <a href="#">
+                Records
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         WORK
+         ========================= -->
+
+    <main class="works-page">
+
+        <section class="work-gallery">
+
+
+            <!-- IMAGE -->
+
+            <div class="work-image-frame">
+
+                <img
+                    id="work-image"
+                    src="images/works/Somoku.jpg"
+                    alt="Somoku"
+                >
+
+            </div>
+
+
+
+            <!-- DOTS -->
+
+            <div class="work-dots">
+
+                <button
+                    class="work-dot active"
+                    data-index="0"
+                    aria-label="Somoku">
+                </button>
+
+                <button
+                    class="work-dot"
+                    data-index="1"
+                    aria-label="No. 1 Somoku">
+                </button>
+
+                <button
+                    class="work-dot"
+                    data-index="2"
+                    aria-label="No. 2 Gentle Breeze">
+                </button>
+
+                <button
+                    class="work-dot"
+                    data-index="3"
+                    aria-label="No. 3 Overlap">
+                </button>
+
+                <button
+                    class="work-dot"
+                    data-index="4"
+                    aria-label="No. 4 Rainfall">
+                </button>
+
+            </div>
+
+
+
+            <!-- TITLE -->
+
+            <div class="work-heading">
+
+                <h1 id="work-title">
+                    Somoku
+                </h1>
+
+                <p
+                    id="work-material"
+                    style="display: none;">
+                </p>
+
+            </div>
+
+
+
+            <!-- DESCRIPTION -->
+
+            <div class="work-description">
+
+                <p id="work-intro">
+                    Somoku Series began with photographs, during a trip I took alone. On the last day of my trip to Damyang, a town known for bamboo, I was struck by the soft rain, the waving leaves, and the landscape filled with green. I wanted viewers to experience the scene and feeling I had at that moment through my work in an indirect way. I focused on the forms of bamboo, raindrops, and the way the leaves overlapped as they moved in the wind.
+                </p>
+
+
+                <p id="work-text">
+                    Rather than using glass as a substitute for gemstones, I explored expressions and joining structures that make use of the properties of glass.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        © 2026. Eom Nayun All rights reserved.
+
+    </footer>
+
+
+
+    <!-- =========================
+         WORK SLIDER
+         ========================= -->
+
+    <script>
+
+        const works = [
+
+            /* =========================
+               0. SOMOKU SERIES INTRO
+               ========================= */
+
+            {
+                image: "images/works/Somoku.jpg",
+
+                title: "Somoku",
+
+                material: "",
+
+                intro: `Somoku Series began with photographs, during a trip I took alone. On the last day of my trip to Damyang, a town known for bamboo, I was struck by the soft rain, the waving leaves, and the landscape filled with green. I wanted viewers to experience the scene and feeling I had at that moment through my work in an indirect way. I focused on the forms of bamboo, raindrops, and the way the leaves overlapped as they moved in the wind.`,
+
+                text: `Rather than using glass as a substitute for gemstones, I explored expressions and joining structures that make use of the properties of glass.`
+            },
+
+
+            /* =========================
+               1. NO. 1 SOMOKU
+               ========================= */
+
+            {
+                image: "images/works/Somoku-01.jpg",
+
+                title: "No. 1 Somoku",
+
+                material: "Glass, Alcohol tint, Black Oxide Finished Brass",
+
+                intro: `The bamboo museum has many different kinds of bamboo growing in its garden. I was inspired by the way the different bamboos were intertwined and mixed together.`,
+
+                text: ``
+            },
+
+
+            /* =========================
+               2. NO. 2 GENTLE BREEZE
+               ========================= */
+
+            {
+                image: "images/works/Somoku-02.jpg",
+
+                title: "No. 2 Gentle Breeze",
+
+                material: "Glass, Brass",
+
+                intro: `I was inspired by the bamboo leaves dancing in the wind, overlapping and coming together as if they were one body.`,
+
+                text: ``
+            },
+
+
+            /* =========================
+               3. NO. 3 OVERLAP
+               ========================= */
+
+            {
+                image: "images/works/Somoku-03.jpg",
+
+                title: "No. 3 Overlap",
+
+                material: "Glass, Brass",
+
+                intro: `I found it interesting that similar forms could overlap and come together in different places to create one form. I expressed this overlap and combination through the form of a brooch.`,
+
+                text: ``
+            },
+
+
+            /* =========================
+               4. NO. 4 RAINFALL
+               ========================= */
+
+            {
+                image: "images/works/Somoku-04.jpg",
+
+                title: "No. 4 Rainfall",
+
+                material: "Glass, Brass",
+
+                intro: `This work began with the thought of warm and gentle drizzle surrounding the world.`,
+
+                text: ``
+            }
+
+        ];
+
+
+
+        const image =
+            document.getElementById("work-image");
+
+        const title =
+            document.getElementById("work-title");
+
+        const material =
+            document.getElementById("work-material");
+
+        const intro =
+            document.getElementById("work-intro");
+
+        const text =
+            document.getElementById("work-text");
+
+        const dots =
+            document.querySelectorAll(".work-dot");
+
+
+
+        function showWork(index) {
+
+            const work = works[index];
+
+
+            /* IMAGE */
+
+            image.src = work.image;
+            image.alt = work.title;
+
+
+            /* TITLE */
+
+            title.textContent = work.title;
+
+
+            /* MATERIAL */
+
+            material.textContent = work.material;
+
+            material.style.display =
+                work.material ? "block" : "none";
+
+
+            /* DESCRIPTION */
+
+            intro.innerHTML = work.intro;
+
+            text.innerHTML = work.text;
+
+
+            /* DOTS */
+
+            dots.forEach((dot, i) => {
+
+                dot.classList.toggle(
+                    "active",
+                    i === index
+                );
+
+            });
+
+        }
+
+
+
+        /* =========================
+           DOT CLICK
+           ========================= */
+
+        dots.forEach(dot => {
+
+            dot.addEventListener(
+                "click",
+                function () {
+
+                    const index =
+                        Number(this.dataset.index);
+
+                    showWork(index);
+
+                }
+            );
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
