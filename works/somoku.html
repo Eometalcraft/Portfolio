@@ -7,7 +7,7 @@
 
     <title>Somoku | Eom, Nayun</title>
 
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="../style.css?v=3">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
         <div class="identity">
 
-            <a href="index.html" class="identity-link">
+            <a href="../index.html" class="identity-link">
                 <strong>Eom, Nayun</strong>
             </a>
 
@@ -30,19 +30,22 @@
 
         <nav class="navigation">
 
-            <a href="about.html">About</a>
+            <a href="../about.html">
+                About
+            </a>
 
 
             <!-- WORKS -->
             <div class="works-menu">
 
-                <a href="works.html" class="works-link active">
+                <a href="../works.html"
+                   class="works-link active">
                     Works
                 </a>
 
                 <div class="works-dropdown">
 
-                    <a href="works.html">
+                    <a href="thorns.html">
                         Thorns
                     </a>
 
@@ -65,7 +68,7 @@
             </div>
 
 
-            <a href="exhibition.html">
+            <a href="../exhibition.html">
                 Exhibition
             </a>
 
@@ -98,7 +101,7 @@
 
                 <img
                     id="work-image"
-                    src="images/works/Somoku.jpg"
+                    src="../images/works/Somoku.jpg"
                     alt="Somoku"
                 >
 
@@ -200,7 +203,7 @@
 
             {
                 images: [
-                    "images/works/Somoku.jpg"
+                    "../images/works/Somoku.jpg"
                 ],
 
                 title: "Somoku",
@@ -219,9 +222,9 @@
 
             {
                 images: [
-                    "images/works/Somoku-01.png",
-                    "images/works/Somoku-02.png",
-                    "images/works/Somoku-03.png"
+                    "../images/works/Somoku-01.png",
+                    "../images/works/Somoku-02.png",
+                    "../images/works/Somoku-03.png"
                 ],
 
                 title: "No. 1 Somoku",
@@ -240,8 +243,8 @@
 
             {
                 images: [
-                    "images/works/Gentlebreeze-01.png",
-                    "images/works/Gentlebreeze-02.png"
+                    "../images/works/Gentlebreeze-01.png",
+                    "../images/works/Gentlebreeze-02.png"
                 ],
 
                 title: "No. 2 Gentle Breeze",
@@ -260,8 +263,8 @@
 
             {
                 images: [
-                    "images/works/Overlap-01.png",
-                    "images/works/Overlap-02.png"
+                    "../images/works/Overlap-01.png",
+                    "../images/works/Overlap-02.png"
                 ],
 
                 title: "No. 3 Overlap",
@@ -280,9 +283,9 @@
 
             {
                 images: [
-                    "images/works/Rainfall-01.png",
-                    "images/works/Rainfall-02.png",
-                    "images/works/Rainfall-03.png"
+                    "../images/works/Rainfall-01.png",
+                    "../images/works/Rainfall-02.png",
+                    "../images/works/Rainfall-03.png"
                 ],
 
                 title: "No. 4 Rainfall",
@@ -428,11 +431,6 @@
                 works[currentWork];
 
 
-            /*
-             * 첫 번째 사진이면
-             * 왼쪽 화살표 숨김
-             */
-
             if (currentImage === 0) {
 
                 prevButton.classList.add(
@@ -447,11 +445,6 @@
 
             }
 
-
-            /*
-             * 마지막 사진이면
-             * 오른쪽 화살표 숨김
-             */
 
             if (
                 currentImage ===
