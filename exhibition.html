@@ -174,22 +174,34 @@
 
 <div class="works-menu">
 
-<a href="works.html" class="works-link">Works</a>
+    <button
+        type="button"
+        class="works-link">
+        Works
+    </button>
 
-<div class="works-dropdown">
+    <div class="works-dropdown">
 
-<a href="works/thorns.html">Thorns</a>
+        <a href="works/thorns.html">
+            Thorns
+        </a>
 
-<a href="works/sinsuro-107.html">Sinsuro-107</a>
+        <a href="works/sinsuro-107.html">
+            Sinsuro-107
+        </a>
 
-<a href="works/not-gold-not-emerald.html" class="two-line">
-Not Gold,<br>
-Not Emerald
-</a>
+        <a
+            href="works/not-gold-not-emerald.html"
+            class="two-line">
+            Not Gold,<br>
+            Not Emerald
+        </a>
 
-<a href="works/somoku.html">Somoku</a>
+        <a href="works/somoku.html">
+            Somoku
+        </a>
 
-</div>
+    </div>
 
 </div>
 
@@ -329,7 +341,25 @@ Assemblage
 © 2026. Eom Nayun All rights reserved.
 </footer>
 
+<script>
 
+    const worksLink =
+        document.querySelector(".works-link");
+
+    const worksMenu =
+        document.querySelector(".works-menu");
+
+
+    worksLink.addEventListener(
+        "click",
+        function () {
+
+            worksMenu.classList.toggle("open");
+
+        }
+    );
+
+</script>
 </body>
 
 </html>
