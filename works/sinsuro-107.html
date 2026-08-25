@@ -7,7 +7,7 @@
 
     <title>Sinsuro 107 | Eom, Nayun</title>
 
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="../style.css?v=4">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
         <div class="identity">
 
-            <a href="index.html" class="identity-link">
+            <a href="../index.html" class="identity-link">
                 <strong>Eom, Nayun</strong>
             </a>
 
@@ -30,35 +30,48 @@
 
         <nav class="navigation">
 
-            <a href="about.html">About</a>
+            <a href="../about.html">About</a>
 
 
             <!-- WORKS -->
             <div class="works-menu">
 
-                <a href="works.html" class="works-link active">Works</a>
+                <a href="../works.html" class="works-link active">
+                    Works
+                </a>
 
                 <div class="works-dropdown">
 
-                    <a href="works.html">Thorns</a>
+                    <a href="thorns.html">
+                        Thorns
+                    </a>
 
-                    <a href="sinsuro-107.html">Sinsuro-107</a>
+                    <a href="sinsuro-107.html">
+                        Sinsuro-107
+                    </a>
 
-                    <a href="not-gold-not-emerald.html" class="two-line">
+                    <a href="not-gold-not-emerald.html"
+                       class="two-line">
                         Not Gold,<br>
                         Not Emerald
                     </a>
 
-                    <a href="somoku.html">Somoku</a>
+                    <a href="somoku.html">
+                        Somoku
+                    </a>
 
                 </div>
 
             </div>
 
 
-            <a href="exhibition.html">Exhibition</a>
+            <a href="../exhibition.html">
+                Exhibition
+            </a>
 
-            <a href="#">Records</a>
+            <a href="#">
+                Records
+            </a>
 
         </nav>
 
@@ -85,7 +98,7 @@
 
                 <img
                     id="work-image"
-                    src="images/works/sinsuro-107-1.png"
+                    src="../images/works/sinsuro-107-1.png"
                     alt="Sinsuro 107 - 1"
                 >
 
@@ -168,7 +181,7 @@
 
             {
                 images: [
-                    "images/works/sinsuro-107-1.png"
+                    "../images/works/sinsuro-107-1.png"
                 ],
 
                 title: "Sinsuro 107 - 1",
@@ -185,8 +198,8 @@ While handling and observing these, I began to think that various plant species 
 
             {
                 images: [
-                    "images/works/sinsuro-107-2.jpg",
-                    "images/works/sinsuro-107-3.jpg"
+                    "../images/works/sinsuro-107-2.jpg",
+                    "../images/works/sinsuro-107-3.jpg"
                 ],
 
                 title: "Sinsuro 107 - 2",
@@ -203,21 +216,29 @@ I wanted to preserve the overflowing vitality, happiness, and warmth of the seas
         ];
 
 
-        const image = document.getElementById("work-image");
+        const image =
+            document.getElementById("work-image");
 
-        const title = document.getElementById("work-title");
+        const title =
+            document.getElementById("work-title");
 
-        const material = document.getElementById("work-material");
+        const material =
+            document.getElementById("work-material");
 
-        const intro = document.getElementById("work-intro");
+        const intro =
+            document.getElementById("work-intro");
 
-        const text = document.getElementById("work-text");
+        const text =
+            document.getElementById("work-text");
 
-        const dots = document.querySelectorAll(".work-dot");
+        const dots =
+            document.querySelectorAll(".work-dot");
 
-        const prevButton = document.getElementById("work-prev");
+        const prevButton =
+            document.getElementById("work-prev");
 
-        const nextButton = document.getElementById("work-next");
+        const nextButton =
+            document.getElementById("work-next");
 
 
         let currentWork = 0;
@@ -237,17 +258,23 @@ I wanted to preserve the overflowing vitality, happiness, and warmth of the seas
 
             const work = works[currentWork];
 
-            image.src = work.images[currentImage];
+            image.src =
+                work.images[currentImage];
 
-            image.alt = work.title;
+            image.alt =
+                work.title;
 
-            title.textContent = work.title;
+            title.textContent =
+                work.title;
 
-            material.textContent = work.material;
+            material.textContent =
+                work.material;
 
-            intro.innerHTML = work.intro;
+            intro.innerHTML =
+                work.intro;
 
-            text.innerHTML = work.text;
+            text.innerHTML =
+                work.text;
 
 
             dots.forEach((dot, i) => {
@@ -271,13 +298,16 @@ I wanted to preserve the overflowing vitality, happiness, and warmth of the seas
 
         function showImage(index) {
 
-            const work = works[currentWork];
+            const work =
+                works[currentWork];
 
             currentImage = index;
 
-            image.src = work.images[currentImage];
+            image.src =
+                work.images[currentImage];
 
-            image.alt = work.title;
+            image.alt =
+                work.title;
 
             updateArrows();
 
@@ -290,47 +320,73 @@ I wanted to preserve the overflowing vitality, happiness, and warmth of the seas
 
         function updateArrows() {
 
-            const work = works[currentWork];
+            const work =
+                works[currentWork];
+
 
             if (work.images.length <= 1) {
 
-                prevButton.classList.add("hidden");
+                prevButton.classList.add(
+                    "hidden"
+                );
 
-                nextButton.classList.add("hidden");
+                nextButton.classList.add(
+                    "hidden"
+                );
 
                 return;
 
             }
 
 
-            prevButton.classList.remove("hidden");
+            prevButton.classList.remove(
+                "hidden"
+            );
 
-            nextButton.classList.remove("hidden");
+            nextButton.classList.remove(
+                "hidden"
+            );
 
 
             /*
-             * 첫 번째 사진에서는 왼쪽 꺾쇠 숨김
-             * 마지막 사진에서는 오른쪽 꺾쇠 숨김
+             * 첫 번째 사진에서는
+             * 왼쪽 꺾쇠 숨김
              */
 
             if (currentImage === 0) {
 
-                prevButton.classList.add("hidden");
+                prevButton.classList.add(
+                    "hidden"
+                );
 
             } else {
 
-                prevButton.classList.remove("hidden");
+                prevButton.classList.remove(
+                    "hidden"
+                );
 
             }
 
 
-            if (currentImage === work.images.length - 1) {
+            /*
+             * 마지막 사진에서는
+             * 오른쪽 꺾쇠 숨김
+             */
 
-                nextButton.classList.add("hidden");
+            if (
+                currentImage ===
+                work.images.length - 1
+            ) {
+
+                nextButton.classList.add(
+                    "hidden"
+                );
 
             } else {
 
-                nextButton.classList.remove("hidden");
+                nextButton.classList.remove(
+                    "hidden"
+                );
 
             }
 
@@ -343,13 +399,19 @@ I wanted to preserve the overflowing vitality, happiness, and warmth of the seas
 
         dots.forEach(dot => {
 
-            dot.addEventListener("click", function () {
+            dot.addEventListener(
+                "click",
+                function () {
 
-                const index = Number(this.dataset.index);
+                    const index =
+                        Number(
+                            this.dataset.index
+                        );
 
-                showWork(index);
+                    showWork(index);
 
-            });
+                }
+            );
 
         });
 
@@ -358,32 +420,46 @@ I wanted to preserve the overflowing vitality, happiness, and warmth of the seas
            LEFT
            ========================= */
 
-        prevButton.addEventListener("click", function () {
+        prevButton.addEventListener(
+            "click",
+            function () {
 
-            if (currentImage > 0) {
+                if (currentImage > 0) {
 
-                showImage(currentImage - 1);
+                    showImage(
+                        currentImage - 1
+                    );
+
+                }
 
             }
-
-        });
+        );
 
 
         /* =========================
            RIGHT
            ========================= */
 
-        nextButton.addEventListener("click", function () {
+        nextButton.addEventListener(
+            "click",
+            function () {
 
-            const work = works[currentWork];
+                const work =
+                    works[currentWork];
 
-            if (currentImage < work.images.length - 1) {
+                if (
+                    currentImage <
+                    work.images.length - 1
+                ) {
 
-                showImage(currentImage + 1);
+                    showImage(
+                        currentImage + 1
+                    );
+
+                }
 
             }
-
-        });
+        );
 
 
         /* =========================
