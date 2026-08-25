@@ -2,10 +2,12 @@
     box-sizing: border-box;
 }
 
+
 html {
     margin: 0;
     padding: 0;
 }
+
 
 body {
     margin: 0;
@@ -62,15 +64,18 @@ body {
     box-shadow: none !important;
 }
 
+
 .identity-link strong {
     color: #111111 !important;
     text-decoration: none !important;
 }
 
+
 .identity strong {
     font-size: 25px;
     font-weight: 700;
 }
+
 
 .identity span {
     font-size: 20px;
@@ -96,6 +101,7 @@ body {
     white-space: nowrap;
 }
 
+
 .navigation a {
     color: #111111;
     text-decoration: none;
@@ -103,6 +109,7 @@ body {
     font-size: 19px;
     font-weight: 400;
 }
+
 
 .navigation a:link,
 .navigation a:visited,
@@ -113,7 +120,42 @@ body {
     text-decoration: none;
 }
 
+
 .navigation a.active {
+    font-weight: 700;
+}
+
+
+/* =========================
+   WORKS LINK
+   ========================= */
+
+/*
+ * Works는 <a>가 아니라 <button>으로 사용
+ * About / Exhibition / Records와 동일한 크기
+ */
+
+.navigation .works-link {
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    color: #111111 !important;
+    text-decoration: none !important;
+
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    cursor: pointer;
+}
+
+
+/* Works가 현재 페이지일 때 */
+
+.navigation .works-link.active {
     font-weight: 700;
 }
 
@@ -125,6 +167,7 @@ body {
 .works-menu {
     position: relative;
 }
+
 
 .works-dropdown {
     display: none;
@@ -173,6 +216,7 @@ body {
     white-space: normal;
 }
 
+
 .works-dropdown a:link,
 .works-dropdown a:visited,
 .works-dropdown a:hover,
@@ -207,6 +251,7 @@ body {
     margin: 45px auto 0;
 }
 
+
 .hero img {
     display: block;
 
@@ -240,6 +285,7 @@ body {
     margin-bottom: 130px;
 }
 
+
 .profile img {
     display: block;
 
@@ -270,6 +316,7 @@ body {
     font-weight: 700;
 }
 
+
 .profile-info h1 span {
     margin-left: 10px;
 }
@@ -295,10 +342,12 @@ body {
     line-height: 1.7;
 }
 
+
 .profile-info .contact a {
     color: #111111;
     text-decoration: none;
 }
+
 
 .profile-info .contact a:hover {
     text-decoration: underline;
@@ -313,6 +362,7 @@ body {
     margin: 0;
     padding-bottom: 90px;
 }
+
 
 .cv-section:last-child {
     padding-bottom: 0;
@@ -347,9 +397,11 @@ body {
     margin-top: 14px;
 }
 
+
 .cv-row strong {
     font-size: 20px;
 }
+
 
 .cv-row p {
     margin: 0;
@@ -367,12 +419,14 @@ body {
     margin-left: 115px;
 }
 
+
 .present-info p {
     margin: 0;
 
     font-size: 20px;
     line-height: 1.55;
 }
+
 
 .present-info p + p {
     margin-top: 14px;
@@ -404,29 +458,41 @@ footer {
         height: 100px;
     }
 
+
     .identity strong {
         font-size: 25px;
     }
+
 
     .identity span {
         font-size: 20px;
     }
 
+
     .navigation {
         gap: 35px;
     }
+
 
     .navigation a {
         font-size: 19px;
     }
 
+
+    .navigation .works-link {
+        font-size: 19px;
+    }
+
+
     .hero {
         width: 60%;
     }
 
+
     .about {
         width: 88%;
     }
+
 }
 
 
@@ -440,6 +506,7 @@ footer {
         padding: 0 20px;
     }
 
+
     .header {
         height: auto;
 
@@ -451,17 +518,21 @@ footer {
         gap: 20px;
     }
 
+
     .identity {
         white-space: normal;
     }
+
 
     .identity strong {
         font-size: 21px;
     }
 
+
     .identity span {
         font-size: 16px;
     }
+
 
     .navigation {
         position: static;
@@ -473,15 +544,23 @@ footer {
         flex-wrap: wrap;
     }
 
+
     .navigation a {
         font-size: 16px;
     }
+
+
+    .navigation .works-link {
+        font-size: 16px;
+    }
+
 
     .hero {
         width: 60%;
 
         margin-top: 30px;
     }
+
 
     .about {
         width: 100%;
@@ -490,7 +569,9 @@ footer {
     }
 
 
-    /* 프로필 */
+    /* =========================
+       PROFILE
+       ========================= */
 
     .profile {
         flex-direction: column;
@@ -499,10 +580,12 @@ footer {
         gap: 25px;
     }
 
+
     .profile img {
         width: 290px;
         height: auto;
     }
+
 
     .profile-info {
         margin-top: 0;
@@ -510,20 +593,25 @@ footer {
         transform: none;
     }
 
+
     .profile-info h1 {
         font-size: 22px;
     }
 
+
     .profile-info > p {
         font-size: 17px;
     }
+
 
     .profile-info .contact {
         font-size: 16px;
     }
 
 
-    /* CV */
+    /* =========================
+       CV
+       ========================= */
 
     .cv-row {
         grid-template-columns: 65px 1fr;
@@ -531,34 +619,42 @@ footer {
         column-gap: 10px;
     }
 
+
     .cv-row strong,
     .cv-row p,
     .present-info p {
         font-size: 16px;
     }
 
+
     .present-info {
         margin-left: 0;
     }
 
 
-    /* 모바일 Works */
+    /* =========================
+       MOBILE WORKS DROPDOWN
+       ========================= */
 
     .works-dropdown {
         width: 150px;
     }
+
 }
+
 
 /* =========================
    WORKS PAGE
-========================= */
+   ========================= */
 
 .works-page {
     width: 100%;
 }
 
 
-/* 작품 이미지 영역 */
+/* =========================
+   WORK IMAGE AREA
+   ========================= */
 
 .work-gallery {
     width: 88%;
@@ -650,7 +746,7 @@ footer {
 
 /* =========================
    DOTS
-========================= */
+   ========================= */
 
 .work-dots {
     display: flex;
@@ -685,7 +781,7 @@ footer {
 
 /* =========================
    WORK TITLE
-========================= */
+   ========================= */
 
 .work-heading {
     display: flex;
@@ -718,7 +814,7 @@ footer {
 
 /* =========================
    WORK DESCRIPTION
-========================= */
+   ========================= */
 
 .work-description {
     margin-top: 12px;
@@ -740,23 +836,8 @@ footer {
 
 
 /* =========================
-   WORKS ACTIVE LINK
-========================= */
-
-.navigation .works-link,
-.navigation .works-link:link,
-.navigation .works-link:visited,
-.navigation .works-link:hover,
-.navigation .works-link:focus,
-.navigation .works-link:active {
-    color: #111111 !important;
-    text-decoration: none !important;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
+   WORKS PAGE MOBILE
+   ========================= */
 
 @media (max-width: 600px) {
 
@@ -838,18 +919,4 @@ footer {
         margin-top: 20px;
     }
 
-}
-
-.navigation .works-link {
-    padding: 0;
-    border: none;
-    background: none;
-
-    color: #111111;
-    font-family: inherit;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 1.2;
-
-    cursor: pointer;
 }
