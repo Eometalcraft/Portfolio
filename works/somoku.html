@@ -7,7 +7,7 @@
 
     <title>Somoku | Eom, Nayun</title>
 
-    <link rel="stylesheet" href="../style.css?v=3">
+    <link rel="stylesheet" href="../style.css?v=4">
 </head>
 
 <body>
@@ -38,10 +38,12 @@
             <!-- WORKS -->
             <div class="works-menu">
 
-                <a href="../works.html"
-                   class="works-link active">
+                <button
+                    type="button"
+                    class="works-link active">
                     Works
-                </a>
+                </button>
+
 
                 <div class="works-dropdown">
 
@@ -53,8 +55,9 @@
                         Sinsuro-107
                     </a>
 
-                    <a href="not-gold-not-emerald.html"
-                       class="two-line">
+                    <a
+                        href="not-gold-not-emerald.html"
+                        class="two-line">
                         Not Gold,<br>
                         Not Emerald
                     </a>
@@ -68,10 +71,13 @@
             </div>
 
 
+            <!-- EXHIBITION -->
             <a href="../exhibition.html">
                 Exhibition
             </a>
 
+
+            <!-- RECORDS -->
             <a href="#">
                 Records
             </a>
@@ -192,14 +198,14 @@
 
 
 
-    <!-- WORK SLIDER -->
+    <!-- WORK SLIDER + WORKS MENU -->
     <script>
 
-        const works = [
+        /* =========================
+           WORK DATA
+           ========================= */
 
-            /* =========================
-               0. SOMOKU
-               ========================= */
+        const works = [
 
             {
                 images: [
@@ -215,10 +221,6 @@
                 text: `Rather than using glass as a substitute for gemstones, I explored expressions and joining structures that make use of the properties of glass.`
             },
 
-
-            /* =========================
-               1. NO. 1 SOMOKU
-               ========================= */
 
             {
                 images: [
@@ -237,10 +239,6 @@
             },
 
 
-            /* =========================
-               2. NO. 2 GENTLE BREEZE
-               ========================= */
-
             {
                 images: [
                     "../images/works/Gentlebreeze-01.png",
@@ -257,10 +255,6 @@
             },
 
 
-            /* =========================
-               3. NO. 3 OVERLAP
-               ========================= */
-
             {
                 images: [
                     "../images/works/Overlap-01.png",
@@ -276,10 +270,6 @@
                 text: `I expressed this overlap and combination through the form of a brooch.`
             },
 
-
-            /* =========================
-               4. NO. 4 RAINFALL
-               ========================= */
 
             {
                 images: [
@@ -300,6 +290,10 @@
         ];
 
 
+
+        /* =========================
+           ELEMENTS
+           ========================= */
 
         const image =
             document.getElementById("work-image");
@@ -325,6 +319,11 @@
         const nextButton =
             document.getElementById("next-button");
 
+
+
+        /* =========================
+           CURRENT STATE
+           ========================= */
 
         let currentWork = 0;
 
@@ -534,9 +533,32 @@
                     showWork(index);
 
                 }
+
             );
 
         });
+
+
+
+        /* =========================
+           WORKS MENU
+           ========================= */
+
+        const worksLink =
+            document.querySelector(".works-link");
+
+        const worksMenu =
+            document.querySelector(".works-menu");
+
+
+        worksLink.addEventListener(
+            "click",
+            function () {
+
+                worksMenu.classList.toggle("open");
+
+            }
+        );
 
 
 
