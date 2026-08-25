@@ -7,7 +7,7 @@
 
     <title>Not Gold, Not Emerald | Eom, Nayun</title>
 
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="../style.css?v=3">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
         <div class="identity">
 
-            <a href="index.html" class="identity-link">
+            <a href="../index.html" class="identity-link">
                 <strong>Eom, Nayun</strong>
             </a>
 
@@ -30,39 +30,53 @@
 
         <nav class="navigation">
 
-            <a href="about.html">About</a>
+            <a href="../about.html">About</a>
 
 
             <!-- WORKS -->
             <div class="works-menu">
 
-                <a href="works.html" class="works-link active">Works</a>
+                <a href="../works.html" class="works-link active">
+                    Works
+                </a>
 
                 <div class="works-dropdown">
 
-                    <a href="works.html">Thorns</a>
+                    <a href="thorns.html">
+                        Thorns
+                    </a>
 
-                    <a href="sinsuro-107.html">Sinsuro-107</a>
+                    <a href="sinsuro-107.html">
+                        Sinsuro-107
+                    </a>
 
-                    <a href="not-gold-not-emerald.html" class="two-line">
+                    <a href="not-gold-not-emerald.html"
+                       class="two-line">
                         Not Gold,<br>
                         Not Emerald
                     </a>
 
-                    <a href="somoku.html">Somoku</a>
+                    <a href="somoku.html">
+                        Somoku
+                    </a>
 
                 </div>
 
             </div>
 
 
-            <a href="exhibition.html">Exhibition</a>
+            <a href="../exhibition.html">
+                Exhibition
+            </a>
 
-            <a href="#">Records</a>
+            <a href="#">
+                Records
+            </a>
 
         </nav>
 
     </header>
+
 
 
     <!-- WORK -->
@@ -84,7 +98,7 @@
 
                 <img
                     id="work-image"
-                    src="images/works/NGNE-01.png"
+                    src="../images/works/NGNE-01.png"
                     alt="Not Gold, Not Emerald"
                 >
 
@@ -97,6 +111,7 @@
                 </button>
 
             </div>
+
 
 
             <!-- DOTS -->
@@ -123,6 +138,7 @@
             </div>
 
 
+
             <!-- TITLE -->
             <div class="work-heading">
 
@@ -135,6 +151,7 @@
                 </p>
 
             </div>
+
 
 
             <!-- DESCRIPTION -->
@@ -163,12 +180,14 @@
     </main>
 
 
+
     <!-- FOOTER -->
     <footer>
 
         © 2026. Eom Nayun All rights reserved.
 
     </footer>
+
 
 
     <!-- WORK SLIDER -->
@@ -182,8 +201,8 @@
 
             {
                 images: [
-                    "images/works/NGNE-01.png",
-                    "images/works/NGNE-02.png"
+                    "../images/works/NGNE-01.png",
+                    "../images/works/NGNE-02.png"
                 ],
 
                 title: "Not Gold, Not Emerald",
@@ -208,21 +227,21 @@ But the technique, time, care, and meaning contained within it are my ‘real.�
                FIZZ
                ========================= */
 
-           {
-    images: [
-        "images/works/Fizz-01.jpg",
-        "images/works/Fizz-02.jpg"
-    ],
+            {
+                images: [
+                    "../images/works/Fizz-01.jpg",
+                    "../images/works/Fizz-02.jpg"
+                ],
 
-    title: "Fizz",
+                title: "Fizz",
 
-    material: "2025 / Brass, Beer Bottle",
+                material: "2025 / Brass, Beer Bottle",
 
-    intro: `This brooch was inspired by the rising carbonation bubbles inside a beer bottle. Throughout the semester, I sought to expand my lapidary skills in a different direction.`,
+                intro: `This brooch was inspired by the rising carbonation bubbles inside a beer bottle. Throughout the semester, I sought to expand my lapidary skills in a different direction.`,
 
-    text: `Gemstones are often viewed as materials that are supported and held by metal through gem setting, but my goal was to reverse this relationship. For this work, I chose glass as an alternative material to precious gemstones, which are expensive and difficult to obtain. Glass is an accessible material found in everyday life and can also be recycled.<br><br>
+                text: `Gemstones are often viewed as materials that are supported and held by metal through gem setting, but my goal was to reverse this relationship. For this work, I chose glass as an alternative material to precious gemstones, which are expensive and difficult to obtain. Glass is an accessible material found in everyday life and can also be recycled.<br><br>
 Since this work aimed to reverse the relationship between metal and glass, I worked on a wide glass surface to emphasize the presence of metal. To connect the two materials without using adhesives, I used rivets, a cold joining technique.`
-},
+            },
 
 
             /* =========================
@@ -231,8 +250,8 @@ Since this work aimed to reverse the relationship between metal and glass, I wor
 
             {
                 images: [
-                    "images/works/Revival-01.jpg",
-                    "images/works/Revival-02.jpg"
+                    "../images/works/Revival-01.jpg",
+                    "../images/works/Revival-02.jpg"
                 ],
 
                 title: "Revival",
@@ -249,26 +268,42 @@ Although the piece broke twice during the making process, I restored it and gave
         ];
 
 
+
         /* =========================
            ELEMENTS
            ========================= */
 
-        const image = document.getElementById("work-image");
-        const title = document.getElementById("work-title");
-        const material = document.getElementById("work-material");
-        const intro = document.getElementById("work-intro");
-        const text = document.getElementById("work-text");
+        const image =
+            document.getElementById("work-image");
 
-        const dots = document.querySelectorAll(".work-dot");
+        const title =
+            document.getElementById("work-title");
 
-        const prevButton = document.getElementById("prev-image");
-        const nextButton = document.getElementById("next-image");
+        const material =
+            document.getElementById("work-material");
+
+        const intro =
+            document.getElementById("work-intro");
+
+        const text =
+            document.getElementById("work-text");
+
+        const dots =
+            document.querySelectorAll(".work-dot");
+
+        const prevButton =
+            document.getElementById("prev-image");
+
+        const nextButton =
+            document.getElementById("next-image");
+
 
 
         /* 현재 작품 / 현재 사진 */
 
         let workIndex = 0;
         let imageIndex = 0;
+
 
 
         /* =========================
@@ -283,14 +318,23 @@ Although the piece broke twice during the making process, I restored it and gave
 
             const work = works[workIndex];
 
-            image.src = work.images[imageIndex];
-            image.alt = work.title;
+            image.src =
+                work.images[imageIndex];
 
-            title.textContent = work.title;
-            material.textContent = work.material;
+            image.alt =
+                work.title;
 
-            intro.innerHTML = work.intro;
-            text.innerHTML = work.text;
+            title.textContent =
+                work.title;
+
+            material.textContent =
+                work.material;
+
+            intro.innerHTML =
+                work.intro;
+
+            text.innerHTML =
+                work.text;
 
 
             dots.forEach((dot, i) => {
@@ -308,22 +352,28 @@ Although the piece broke twice during the making process, I restored it and gave
         }
 
 
+
         /* =========================
            SHOW IMAGE
            ========================= */
 
         function showImage(index) {
 
-            const work = works[workIndex];
+            const work =
+                works[workIndex];
 
             imageIndex = index;
 
-            image.src = work.images[imageIndex];
-            image.alt = work.title;
+            image.src =
+                work.images[imageIndex];
+
+            image.alt =
+                work.title;
 
             updateArrows();
 
         }
+
 
 
         /* =========================
@@ -332,62 +382,88 @@ Although the piece broke twice during the making process, I restored it and gave
 
         function updateArrows() {
 
-            /*
-             * 사진이 2장뿐이므로
-             * 첫 번째 사진에서는 왼쪽 숨김
-             * 두 번째 사진에서는 오른쪽 숨김
-             */
-
             if (imageIndex === 0) {
 
-                prevButton.classList.add("hidden");
+                prevButton.classList.add(
+                    "hidden"
+                );
 
             } else {
 
-                prevButton.classList.remove("hidden");
+                prevButton.classList.remove(
+                    "hidden"
+                );
 
             }
 
 
-            if (imageIndex === works[workIndex].images.length - 1) {
+            if (
+                imageIndex ===
+                works[workIndex].images.length - 1
+            ) {
 
-                nextButton.classList.add("hidden");
+                nextButton.classList.add(
+                    "hidden"
+                );
 
             } else {
 
-                nextButton.classList.remove("hidden");
+                nextButton.classList.remove(
+                    "hidden"
+                );
 
             }
 
         }
 
 
-        /* 이전 사진 */
 
-        prevButton.addEventListener("click", function () {
+        /* =========================
+           PREVIOUS IMAGE
+           ========================= */
 
-            if (imageIndex > 0) {
+        prevButton.addEventListener(
+            "click",
+            function () {
 
-                showImage(imageIndex - 1);
+                if (imageIndex > 0) {
 
-            }
+                    showImage(
+                        imageIndex - 1
+                    );
 
-        });
-
-
-        /* 다음 사진 */
-
-        nextButton.addEventListener("click", function () {
-
-            const work = works[workIndex];
-
-            if (imageIndex < work.images.length - 1) {
-
-                showImage(imageIndex + 1);
+                }
 
             }
+        );
 
-        });
+
+
+        /* =========================
+           NEXT IMAGE
+           ========================= */
+
+        nextButton.addEventListener(
+            "click",
+            function () {
+
+                const work =
+                    works[workIndex];
+
+                if (
+                    imageIndex <
+                    work.images.length - 1
+                ) {
+
+                    showImage(
+                        imageIndex + 1
+                    );
+
+                }
+
+            }
+        );
+
 
 
         /* =========================
@@ -396,20 +472,25 @@ Although the piece broke twice during the making process, I restored it and gave
 
         dots.forEach(dot => {
 
-            dot.addEventListener("click", function () {
+            dot.addEventListener(
+                "click",
+                function () {
 
-                const index = Number(
-                    this.dataset.index
-                );
+                    const index =
+                        Number(
+                            this.dataset.index
+                        );
 
-                showWork(index);
+                    showWork(index);
 
-            });
+                }
+            );
 
         });
 
 
-        /* 초기 상태 */
+
+        /* INITIAL */
 
         showWork(0);
 
