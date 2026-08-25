@@ -7,7 +7,7 @@
 
     <title>Thorns | Eom, Nayun</title>
 
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="../style.css?v=3">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
         <div class="identity">
 
-            <a href="index.html" class="identity-link">
+            <a href="../index.html" class="identity-link">
                 <strong>Eom, Nayun</strong>
             </a>
 
@@ -30,35 +30,48 @@
 
         <nav class="navigation">
 
-            <a href="about.html">About</a>
+            <a href="../about.html">About</a>
 
 
             <!-- WORKS -->
             <div class="works-menu">
 
-                <a href="works.html" class="works-link active">Works</a>
+                <a href="#" class="works-link active">
+                    Works
+                </a>
 
                 <div class="works-dropdown">
 
-                    <a href="works.html">Thorns</a>
+                    <a href="thorns.html">
+                        Thorns
+                    </a>
 
-                    <a href="sinsuro-107.html">Sinsuro-107</a>
+                    <a href="sinsuro-107.html">
+                        Sinsuro-107
+                    </a>
 
-                    <a href="not-gold-not-emerald.html" class="two-line">
+                    <a href="not-gold-not-emerald.html"
+                       class="two-line">
                         Not Gold,<br>
                         Not Emerald
                     </a>
 
-                    <a href="somoku.html">Somoku</a>
+                    <a href="somoku.html">
+                        Somoku
+                    </a>
 
                 </div>
 
             </div>
 
 
-            <a href="exhibition.html">Exhibition</a>
+            <a href="../exhibition.html">
+                Exhibition
+            </a>
 
-            <a href="#">Records</a>
+            <a href="#">
+                Records
+            </a>
 
         </nav>
 
@@ -75,7 +88,7 @@
 
                 <img
                     id="work-image"
-                    src="images/works/thorns-01.jpg"
+                    src="../images/works/thorns-01.jpg"
                     alt="Thorns, About Pain"
                 >
 
@@ -155,7 +168,7 @@
         const works = [
 
             {
-                image: "images/works/thorns-01.jpg",
+                image: "../images/works/thorns-01.jpg",
 
                 title: "Thorns, About Pain",
 
@@ -167,8 +180,9 @@ and making them unable to respond or resist. As the thorn draws closer, it carve
 of pain.`
             },
 
+
             {
-                image: "images/works/thorns-02.jpg",
+                image: "../images/works/thorns-02.jpg",
 
                 title: "Thorns, About Patience",
 
@@ -179,8 +193,9 @@ The ooze flows from the wound, hardening over time and forms a round shape.<br>
 As time passes, I wait for the scab to fall away with patience.`
             },
 
+
             {
-                image: "images/works/thorns-03.jpg",
+                image: "../images/works/thorns-03.jpg",
 
                 title: "Thorns, About Healing",
 
@@ -194,11 +209,20 @@ embrace the fading scar would be a part of me, accepting it as a part of myself.
         ];
 
 
-        const image = document.getElementById("work-image");
-        const title = document.getElementById("work-title");
-        const material = document.getElementById("work-material");
-        const text = document.getElementById("work-text");
-        const dots = document.querySelectorAll(".work-dot");
+        const image =
+            document.getElementById("work-image");
+
+        const title =
+            document.getElementById("work-title");
+
+        const material =
+            document.getElementById("work-material");
+
+        const text =
+            document.getElementById("work-text");
+
+        const dots =
+            document.querySelectorAll(".work-dot");
 
 
         function showWork(index) {
@@ -215,7 +239,10 @@ embrace the fading scar would be a part of me, accepting it as a part of myself.
 
             dots.forEach((dot, i) => {
 
-                dot.classList.toggle("active", i === index);
+                dot.classList.toggle(
+                    "active",
+                    i === index
+                );
 
             });
 
@@ -224,15 +251,40 @@ embrace the fading scar would be a part of me, accepting it as a part of myself.
 
         dots.forEach(dot => {
 
-            dot.addEventListener("click", function () {
+            dot.addEventListener(
+                "click",
+                function () {
 
-                const index = Number(this.dataset.index);
+                    const index =
+                        Number(this.dataset.index);
 
-                showWork(index);
+                    showWork(index);
 
-            });
+                }
+            );
 
         });
+
+
+        /* WORKS MOBILE / TABLET */
+
+        const worksLink =
+            document.querySelector(".works-link");
+
+        const worksMenu =
+            document.querySelector(".works-menu");
+
+
+        worksLink.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                worksMenu.classList.toggle("open");
+
+            }
+        );
 
     </script>
 
