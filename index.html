@@ -7,7 +7,7 @@
 
     <title>Eom, Nayun | Contemporary Jewelry Artist</title>
 
-<link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 
 <body>
@@ -16,44 +16,71 @@
     <header class="header">
 
         <div class="identity">
+
             <strong>Eom, Nayun</strong>
+
             <span>|</span>
+
             <span>Contemporary Jewelry Artist</span>
+
         </div>
+
 
         <nav class="navigation">
 
-            <a href="about.html">About</a>
+            <a href="about.html">
+                About
+            </a>
+
 
             <!-- WORKS -->
             <div class="works-menu">
 
-                <a href="#" class="works-link">Works</a>
+                <button
+                    type="button"
+                    class="works-link">
+                    Works
+                </button>
+
 
                 <div class="works-dropdown">
 
-                    <a href="works/thorns.html">Thorns</a>
+                    <a href="works/thorns.html">
+                        Thorns
+                    </a>
 
-                    <a href="works/sinsuro-107.html">Sinsuro-107</a>
+                    <a href="works/sinsuro-107.html">
+                        Sinsuro-107
+                    </a>
 
-                    <a href="works/not-gold-not-emerald.html" class="two-line">
+                    <a
+                        href="works/not-gold-not-emerald.html"
+                        class="two-line">
                         Not Gold,<br>
                         Not Emerald
                     </a>
 
-                    <a href="works/somoku.html">Somoku</a>
+                    <a href="works/somoku.html">
+                        Somoku
+                    </a>
 
                 </div>
 
             </div>
 
-            <a href="exhibition.html">Exhibition</a>
 
-            <a href="#">Records</a>
+            <a href="exhibition.html">
+                Exhibition
+            </a>
+
+            <a href="#">
+                Records
+            </a>
 
         </nav>
 
     </header>
+
 
 
     <!-- MAIN -->
@@ -61,11 +88,14 @@
 
         <section class="hero">
 
-            <img src="images/home/hero.jpg" alt="Eom Nayun">
+            <img
+                src="images/home/hero.jpg"
+                alt="Eom Nayun">
 
         </section>
 
     </main>
+
 
 
     <!-- FOOTER -->
@@ -74,6 +104,29 @@
         © 2026. Eom Nayun All rights reserved.
 
     </footer>
+
+
+
+    <!-- WORKS TOGGLE -->
+    <script>
+
+        const worksLink =
+            document.querySelector(".works-link");
+
+        const worksMenu =
+            document.querySelector(".works-menu");
+
+
+        worksLink.addEventListener(
+            "click",
+            function () {
+
+                worksMenu.classList.toggle("open");
+
+            }
+        );
+
+    </script>
 
 </body>
 
