@@ -30,15 +30,19 @@
 
         <nav class="navigation">
 
-            <a href="../about.html">About</a>
+            <a href="../about.html">
+                About
+            </a>
 
 
             <!-- WORKS -->
             <div class="works-menu">
 
-                <a href="../works.html" class="works-link active">
+                <button
+                    type="button"
+                    class="works-link active">
                     Works
-                </a>
+                </button>
 
                 <div class="works-dropdown">
 
@@ -163,12 +167,17 @@
 
                 <p id="work-text">
                     Materials such as cubic zirconia, glass, and brass — the price of the material became the standard for determining authenticity.<br><br>
+
                     But I questioned this idea. If the materials are considered “fake,” does that mean my work must also be defined as a fake without value?<br><br>
+
                     The materials I use are not gold, nor are they emeralds.<br>
                     However, my works contain my time, my skills, and the warmth of my hands.<br>
                     The depth of form, technique, and meaning within them is no different from what is defined as “real.”<br><br>
+
                     I believe that the concept of what makes jewelry “real” is determined not by the material itself, but by the intention and attitude behind it.<br><br>
+
                     I want to speak to those who judge value only through visible price and brilliance.<br><br>
+
                     “What you see is not gold, nor emerald.<br>
                     But the technique, time, care, and meaning contained within it are my ‘real.’”
                 </p>
@@ -487,6 +496,30 @@ Although the piece broke twice during the making process, I restored it and gave
             );
 
         });
+
+
+
+        /* =========================
+           WORKS MENU
+           ========================= */
+
+        const worksLink =
+            document.querySelector(".works-link");
+
+        const worksMenu =
+            document.querySelector(".works-menu");
+
+
+        worksLink.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                worksMenu.classList.toggle("open");
+
+            }
+        );
 
 
 
