@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Exhibition | Eom, Nayun</title>
+
+<link rel="stylesheet" href="style.css?v=4">
+
+<style>
+
+/* =========================
+   EXHIBITION
+   ========================= */
+
+.exhibition-page {
+    width: 88%;
+    max-width: 1400px;
+    margin: 40px auto 0;
+}
+
+.exhibition-title {
+    margin: 0 0 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.exhibition-year {
+    margin: 0 0 45px;
+    padding-top: 0;
+}
+
+.exhibition-year + .exhibition-year {
+    margin-top: 75px;
+}
+
+.exhibition-year h2 {
+    margin: 0 0 35px;
+    padding-bottom: 12px;
+
+    border-bottom: 2px solid #aaaaaa;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.exhibition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 70px;
+    row-gap: 70px;
+}
+
+.exhibition-item {
+    display: block;
+
+    color: #111111;
+    text-decoration: none;
+}
+
+.exhibition-item img {
+    display: block;
+
+    width: 100%;
+    height: 430px;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+}
+
+.exhibition-item-title {
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* =========================
+   EXHIBITION MOBILE
+   ========================= */
+
+@media (max-width: 1000px) {
+
+    .exhibition-page {
+        width: 88%;
+    }
+
+    .exhibition-grid {
+        column-gap: 35px;
+    }
+
+    .exhibition-item img {
+        height: 360px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .exhibition-page {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .exhibition-title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .exhibition-year + .exhibition-year {
+        margin-top: 55px;
+    }
+
+    .exhibition-year h2 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .exhibition-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 45px;
+    }
+
+    .exhibition-item img {
+        height: 280px;
+    }
+
+    .exhibition-item-title {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="identity">
+
+<a href="index.html" class="identity-link">
+<strong>Eom, Nayun</strong>
+</a>
+
+<span>|</span>
+
+<span>Contemporary Jewelry Artist</span>
+
+</div>
+
+
+<nav class="navigation">
+
+<!-- ABOUT -->
+
+<a href="about.html">About</a>
+
+
+<!-- WORKS -->
+
+<div class="works-menu">
+
+<a href="works.html" class="works-link">Works</a>
+
+<div class="works-dropdown">
+
+<a href="works.html">Thorns</a>
+
+<a href="sinsuro-107.html">Sinsuro-107</a>
+
+<a href="not-gold-not-emerald.html" class="two-line">
+Not Gold,<br>
+Not Emerald
+</a>
+
+<a href="somoku.html">Somoku</a>
+
+</div>
+
+</div>
+
+
+<!-- EXHIBITION -->
+
+<a href="exhibition.html" class="active">Exhibition</a>
+
+
+<!-- RECORDS -->
+
+<a href="#">Records</a>
+
+</nav>
+
+</header>
+
+
+<!-- EXHIBITION -->
+
+<main class="exhibition-page">
+
+<h1 class="exhibition-title">
+Group Exhibition
+</h1>
+
+
+<!-- =========================
+     2026
+     ========================= -->
+
+<section class="exhibition-year">
+
+<h2>2026</h2>
+
+
+<div class="exhibition-grid">
+
+
+<a href="#" class="exhibition-item">
+
+<img
+src="images/exhibition/planetatwork/planetatworks.png"
+alt="작업하는 행성들"
+>
+
+<p class="exhibition-item-title">
+작업하는 행성들
+</p>
+
+</a>
+
+
+<a href="#" class="exhibition-item">
+
+<img
+src="images/exhibition/roughtorare/roughtorare.jpg"
+alt="Rough to Rare"
+>
+
+<p class="exhibition-item-title">
+Rough to Rare
+</p>
+
+</a>
+
+
+<a href="#" class="exhibition-item">
+
+<img
+src="images/exhibition/craftnow24/craftnow24.jpg"
+alt="공예+지금+24"
+>
+
+<p class="exhibition-item-title">
+공예+지금+24
+</p>
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     2024
+     ========================= -->
+
+<section class="exhibition-year">
+
+<h2>2024</h2>
+
+
+<div class="exhibition-grid">
+
+
+<a href="#" class="exhibition-item">
+
+<img
+src="images/exhibition/craftsonapicnic/craftsonapicnic.png"
+alt="공예별 소풍"
+>
+
+<p class="exhibition-item-title">
+공예별 소풍
+</p>
+
+</a>
+
+
+<a href="#" class="exhibition-item">
+
+<img
+src="images/exhibition/assemblage/assemblage.jpg"
+alt="Assemblage"
+>
+
+<p class="exhibition-item-title">
+Assemblage
+</p>
+
+</a>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+© 2026. Eom Nayun All rights reserved.
+</footer>
+
+
+</body>
+
+</html>
