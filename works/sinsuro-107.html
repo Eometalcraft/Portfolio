@@ -30,15 +30,19 @@
 
         <nav class="navigation">
 
-            <a href="../about.html">About</a>
+            <a href="../about.html">
+                About
+            </a>
 
 
             <!-- WORKS -->
             <div class="works-menu">
 
-                <a href="../works.html" class="works-link active">
+                <button
+                    type="button"
+                    class="works-link active">
                     Works
-                </a>
+                </button>
 
                 <div class="works-dropdown">
 
@@ -457,6 +461,29 @@ I wanted to preserve the overflowing vitality, happiness, and warmth of the seas
                     );
 
                 }
+
+            }
+        );
+
+
+        /* =========================
+           WORKS MENU
+           ========================= */
+
+        const worksLink =
+            document.querySelector(".works-link");
+
+        const worksMenu =
+            document.querySelector(".works-menu");
+
+
+        worksLink.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                worksMenu.classList.toggle("open");
 
             }
         );
