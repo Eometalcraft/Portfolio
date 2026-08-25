@@ -844,10 +844,12 @@ footer {
     padding: 0;
     border: none;
     background: none;
-    font: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    color: inherit;
+
+    color: #111111;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2;
+
     cursor: pointer;
 }
