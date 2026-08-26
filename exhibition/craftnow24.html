@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Craft+Now+24 | Eom, Nayun</title>
+
+    <link rel="stylesheet" href="../style.css?v=5">
+
+    <style>
+
+        /* =========================
+           EXHIBITION DETAIL
+           ========================= */
+
+        .exhibition-detail {
+            width: 88%;
+            max-width: 1400px;
+
+            margin: 45px auto 0;
+        }
+
+
+        /* =========================
+           INFORMATION
+           ========================= */
+
+        .exhibition-info {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            column-gap: 15px;
+
+            align-items: start;
+
+            margin-bottom: 170px;
+        }
+
+
+        .exhibition-poster {
+            width: 100%;
+            max-width: 430px;
+
+            justify-self: center;
+
+            transform: translateX(40px);
+        }
+
+
+        .exhibition-poster img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+        }
+
+
+        .exhibition-text {
+            padding-top: 5px;
+
+            font-size: 20px;
+            line-height: 1.35;
+        }
+
+
+        .exhibition-text h1 {
+            margin: 0 0 32px;
+
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+
+        .exhibition-text p {
+            margin: 0;
+        }
+
+
+        .exhibition-text .exhibition-name {
+            margin-bottom: 24px;
+        }
+
+
+        .exhibition-text .exhibition-date {
+            margin-bottom: 0;
+        }
+
+
+        .exhibition-text .exhibition-location {
+            margin-bottom: 42px;
+        }
+
+
+        .exhibition-text .exhibition-description {
+            line-height: 1.35;
+        }
+
+
+        /* =========================
+           EXHIBITION PHOTOS
+           ========================= */
+
+        .exhibition-photos {
+            width: 72%;
+
+            margin: 0 auto;
+        }
+
+
+        .exhibition-photos img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            margin: 0 auto 220px;
+        }
+
+
+        .exhibition-photos img:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           MOBILE
+           ========================= */
+
+        @media (max-width: 700px) {
+
+            .exhibition-detail {
+                width: 100%;
+
+                margin-top: 30px;
+            }
+
+
+            .exhibition-info {
+                display: block;
+
+                margin-bottom: 100px;
+            }
+
+
+            .exhibition-poster {
+                width: 75%;
+
+                max-width: 430px;
+
+                margin: 0 auto 45px;
+
+                transform: none;
+            }
+
+
+            .exhibition-text {
+                font-size: 17px;
+
+                padding: 0;
+            }
+
+
+            .exhibition-text h1 {
+                font-size: 22px;
+
+                margin-bottom: 30px;
+            }
+
+
+            .exhibition-text .exhibition-name {
+                margin-bottom: 22px;
+            }
+
+
+            .exhibition-text .exhibition-date {
+                margin-bottom: 0;
+            }
+
+
+            .exhibition-text .exhibition-location {
+                margin-bottom: 35px;
+            }
+
+
+            .exhibition-photos {
+                width: 88%;
+            }
+
+
+            .exhibition-photos img {
+                margin-bottom: 110px;
+            }
+
+
+            .exhibition-photos img:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <header class="header">
+
+        <div class="identity">
+
+            <a
+                href="../index.html"
+                class="identity-link"
+            >
+                <strong>Eom, Nayun</strong>
+            </a>
+
+            <span>|</span>
+
+            <span>
+                Contemporary Jewelry Artist
+            </span>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <!-- ABOUT -->
+
+            <a href="../about.html">
+                About
+            </a>
+
+
+            <!-- WORKS -->
+
+            <div class="works-menu">
+
+                <button
+                    type="button"
+                    class="works-link"
+                >
+                    Works
+                </button>
+
+
+                <div class="works-dropdown">
+
+                    <a href="../works/thorns.html">
+                        Thorns
+                    </a>
+
+                    <a href="../works/sinsuro-107.html">
+                        Sinsuro-107
+                    </a>
+
+                    <a
+                        href="../works/not-gold-not-emerald.html"
+                        class="two-line"
+                    >
+                        Not Gold,<br>
+                        Not Emerald
+                    </a>
+
+                    <a href="../works/somoku.html">
+                        Somoku
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXHIBITION -->
+
+            <a
+                href="../exhibition.html"
+                class="active"
+            >
+                Exhibition
+            </a>
+
+
+            <!-- RECORDS -->
+
+            <a href="#">
+                Records
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         EXHIBITION DETAIL
+         ========================= -->
+
+    <main class="exhibition-detail">
+
+
+        <!-- INFORMATION -->
+
+        <section class="exhibition-info">
+
+
+            <!-- POSTER -->
+
+            <div class="exhibition-poster">
+
+                <img
+                    src="../images/exhibition/craftnow24/craftnow24.jpg"
+                    alt="Craft+Now+24 exhibition poster"
+                >
+
+            </div>
+
+
+            <!-- TEXT -->
+
+            <div class="exhibition-text">
+
+                <h1>
+                    Craft+Now+24
+                </h1>
+
+
+                <p class="exhibition-name">
+
+                    2026 Spring Semester Kookmin University
+                    Graduate School Metal Craft Department
+                    Project Exhibition
+
+                </p>
+
+
+                <p class="exhibition-date">
+
+                    2026. 03. 04 - 03. 06
+
+                </p>
+
+
+                <p class="exhibition-location">
+
+                    Kookmin University Formative Arts Gallery,
+                    77 Jeongneung-ro, Seongbuk-gu, Seoul, Korea
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             EXHIBITION PHOTOS
+             ========================= -->
+
+        <section class="exhibition-photos">
+
+            <img
+                src="../images/exhibition/craftnow24/craftnow24-01.jpeg"
+                alt="Craft+Now+24 exhibition view 1"
+            >
+
+            <img
+                src="../images/exhibition/craftnow24/craftnow24-02.jpg"
+                alt="Craft+Now+24 exhibition view 2"
+            >
+
+            <img
+                src="../images/exhibition/craftnow24/craftnow24-03.jpg"
+                alt="Craft+Now+24 exhibition view 3"
+            >
+
+            <img
+                src="../images/exhibition/craftnow24/craftnow24-04.jpg"
+                alt="Craft+Now+24 exhibition view 4"
+            >
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        © 2026. Eom Nayun All rights reserved.
+
+    </footer>
+
+
+
+    <!-- =========================
+         WORKS MENU
+         ========================= -->
+
+    <script>
+
+        const worksLink =
+            document.querySelector(".works-link");
+
+        const worksMenu =
+            document.querySelector(".works-menu");
+
+
+        worksLink.addEventListener(
+            "click",
+            function () {
+
+                worksMenu.classList.toggle("open");
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
