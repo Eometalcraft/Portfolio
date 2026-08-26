@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Archive | Eom, Nayun</title>
+
+    <link rel="stylesheet" href="style.css?v=5">
+
+    <style>
+
+        /* =========================
+           ARCHIVE
+           ========================= */
+
+        .archive-page {
+            width: 88%;
+            max-width: 1400px;
+
+            margin: 55px auto 0;
+        }
+
+
+        .archive-title {
+            margin: 0 0 70px;
+
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+
+        /* =========================
+           ARCHIVE GRID
+           ========================= */
+
+        .archive-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            column-gap: 100px;
+            row-gap: 120px;
+        }
+
+
+        /* =========================
+           ARCHIVE ITEM
+           ========================= */
+
+        .archive-item {
+            width: 100%;
+
+            text-align: center;
+        }
+
+
+        .archive-image-frame {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .archive-image {
+            display: block;
+
+            width: 100%;
+            height: 520px;
+
+            object-fit: contain;
+        }
+
+
+        /* =========================
+           DOTS
+           ========================= */
+
+        .archive-dots {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            gap: 9px;
+
+            margin-top: 18px;
+        }
+
+
+        .archive-dot {
+            width: 8px;
+            height: 8px;
+
+            padding: 0;
+
+            border: 0;
+            border-radius: 50%;
+
+            background: #c8c8c8;
+
+            cursor: pointer;
+        }
+
+
+        .archive-dot.active {
+            background: #666666;
+        }
+
+
+        /* =========================
+           TITLE
+           ========================= */
+
+        .archive-item-title {
+            margin: 20px 0 0;
+
+            font-size: 18px;
+            font-weight: 400;
+
+            line-height: 1.3;
+        }
+
+
+        /* =========================
+           MOBILE
+           ========================= */
+
+        @media (max-width: 700px) {
+
+            .archive-page {
+                width: 88%;
+
+                margin-top: 35px;
+            }
+
+
+            .archive-title {
+                margin-bottom: 45px;
+
+                font-size: 22px;
+            }
+
+
+            .archive-grid {
+                grid-template-columns: 1fr;
+
+                row-gap: 80px;
+            }
+
+
+            .archive-image {
+                height: 420px;
+            }
+
+
+            .archive-dots {
+                margin-top: 14px;
+            }
+
+
+            .archive-item-title {
+                margin-top: 15px;
+
+                font-size: 17px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <header class="header">
+
+        <div class="identity">
+
+            <a
+                href="index.html"
+                class="identity-link"
+            >
+                <strong>Eom, Nayun</strong>
+            </a>
+
+            <span>|</span>
+
+            <span>
+                Contemporary Jewelry Artist
+            </span>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <!-- ABOUT -->
+
+            <a href="about.html">
+                About
+            </a>
+
+
+            <!-- WORKS -->
+
+            <div class="works-menu">
+
+                <button
+                    type="button"
+                    class="works-link"
+                >
+                    Works
+                </button>
+
+
+                <div class="works-dropdown">
+
+                    <a href="works/thorns.html">
+                        Thorns
+                    </a>
+
+                    <a href="works/sinsuro-107.html">
+                        Sinsuro-107
+                    </a>
+
+                    <a
+                        href="works/not-gold-not-emerald.html"
+                        class="two-line"
+                    >
+                        Not Gold,<br>
+                        Not Emerald
+                    </a>
+
+                    <a href="works/somoku.html">
+                        Somoku
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXHIBITION -->
+
+            <a href="exhibition.html">
+                Exhibition
+            </a>
+
+
+            <!-- ARCHIVE -->
+
+            <a
+                href="archive.html"
+                class="active"
+            >
+                Archive
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         ARCHIVE
+         ========================= -->
+
+    <main class="archive-page">
+
+
+        <h1 class="archive-title">
+            Archive
+        </h1>
+
+
+        <section class="archive-grid">
+
+
+            <!-- =========================
+                 WORKING
+                 ========================= -->
+
+            <article class="archive-item">
+
+                <div class="archive-image-frame">
+
+                    <img
+                        class="archive-image"
+                        src="images/archive/working/working-01.jpg"
+                        alt="Working"
+                    >
+
+                </div>
+
+
+                <div class="archive-dots">
+
+                    <button
+                        class="archive-dot active"
+                        data-group="working"
+                        data-index="0"
+                        aria-label="Working image 1"
+                    ></button>
+
+                    <button
+                        class="archive-dot"
+                        data-group="working"
+                        data-index="1"
+                        aria-label="Working image 2"
+                    ></button>
+
+                    <button
+                        class="archive-dot"
+                        data-group="working"
+                        data-index="2"
+                        aria-label="Working image 3"
+                    ></button>
+
+                </div>
+
+
+                <p class="archive-item-title">
+                    working
+                </p>
+
+            </article>
+
+
+
+            <!-- =========================
+                 HAPPY ENDING SEMESTER
+                 ========================= -->
+
+            <article class="archive-item">
+
+                <div class="archive-image-frame">
+
+                    <img
+                        class="archive-image"
+                        src="images/archive/happyendingsemester/happyendingsemester-01.jpg"
+                        alt="종강의 기쁨"
+                    >
+
+                </div>
+
+
+                <div class="archive-dots">
+
+                    <button
+                        class="archive-dot active"
+                        data-group="happyendingsemester"
+                        data-index="0"
+                        aria-label="종강의 기쁨 image 1"
+                    ></button>
+
+                    <button
+                        class="archive-dot"
+                        data-group="happyendingsemester"
+                        data-index="1"
+                        aria-label="종강의 기쁨 image 2"
+                    ></button>
+
+                </div>
+
+
+                <p class="archive-item-title">
+                    종강의 기쁨
+                </p>
+
+            </article>
+
+
+
+            <!-- =========================
+                 MY SEAT
+                 ========================= -->
+
+            <article class="archive-item">
+
+                <div class="archive-image-frame">
+
+                    <img
+                        class="archive-image"
+                        src="images/archive/myseat/myseat.jpg"
+                        alt="My Seat"
+                    >
+
+                </div>
+
+
+                <p class="archive-item-title">
+                    My Seat
+                </p>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        © 2026. Eom Nayun All rights reserved.
+
+    </footer>
+
+
+
+    <!-- =========================
+         ARCHIVE SLIDER
+         ========================= -->
+
+    <script>
+
+        const archiveWorks = {
+
+            working: [
+                "images/archive/working/working-01.jpg",
+                "images/archive/working/working-02.jpg",
+                "images/archive/working/working-03.jpg"
+            ],
+
+            happyendingsemester: [
+                "images/archive/happyendingsemester/happyendingsemester-01.jpg",
+                "images/archive/happyendingsemester/happyendingsemester-02.jpg"
+            ]
+
+        };
+
+
+        const archiveItems =
+            document.querySelectorAll(".archive-item");
+
+
+        archiveItems.forEach(item => {
+
+            const image =
+                item.querySelector(".archive-image");
+
+            const dots =
+                item.querySelectorAll(".archive-dot");
+
+
+            dots.forEach(dot => {
+
+                dot.addEventListener(
+                    "click",
+                    function () {
+
+                        const group =
+                            this.dataset.group;
+
+                        const index =
+                            Number(this.dataset.index);
+
+
+                        image.src =
+                            archiveWorks[group][index];
+
+
+                        dots.forEach(
+                            (currentDot, i) => {
+
+                                currentDot.classList.toggle(
+                                    "active",
+                                    i === index
+                                );
+
+                            }
+                        );
+
+                    }
+                );
+
+            });
+
+        });
+
+
+        /* =========================
+           WORKS MENU
+           ========================= */
+
+        const worksLink =
+            document.querySelector(".works-link");
+
+        const worksMenu =
+            document.querySelector(".works-menu");
+
+
+        worksLink.addEventListener(
+            "click",
+            function () {
+
+                worksMenu.classList.toggle("open");
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
