@@ -40,14 +40,16 @@
             margin-bottom: 170px;
         }
 
+
         .exhibition-poster {
-    width: 100%;
-    max-width: 430px;
+            width: 100%;
+            max-width: 430px;
 
-    justify-self: center;
+            justify-self: center;
 
-    transform: translate(40px, -55px);
-}
+            transform: translate(40px, -55px);
+        }
+
 
         .exhibition-poster img {
             display: block;
@@ -58,6 +60,8 @@
 
 
         .exhibition-text {
+            min-width: 0;
+
             padding-top: 5px;
 
             font-size: 20px;
@@ -66,17 +70,24 @@
 
 
         .exhibition-text h1 {
-    margin: 0 0 32px;
+            margin: 0 0 32px;
 
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 1.1;
-}
+            font-size: 25px;
+            font-weight: 400;
+
+            line-height: 1.1;
+        }
+
 
         .exhibition-subtitle {
-    font-size: 19px;
-    font-weight: 400;
-}
+            font-size: 19px;
+            font-weight: 400;
+        }
+
+
+        .exhibition-text p {
+            margin: 0;
+        }
 
 
         .exhibition-text .exhibition-name {
@@ -126,6 +137,119 @@
 
 
         /* =========================
+           TABLET
+           ========================= */
+
+        @media (min-width: 701px) and (max-width: 1000px) {
+
+            .exhibition-detail {
+                width: 88%;
+            }
+
+
+            .exhibition-info {
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+                column-gap: 25px;
+
+                margin-bottom: 140px;
+            }
+
+
+            .exhibition-poster {
+                width: 82%;
+                max-width: 350px;
+
+                justify-self: center;
+
+                transform: none;
+            }
+
+
+            .exhibition-text {
+                min-width: 0;
+
+                padding-top: 5px;
+
+                font-size: 18px;
+            }
+
+
+            .exhibition-text h1 {
+                font-size: 23px;
+
+                margin-bottom: 28px;
+            }
+
+
+            .exhibition-subtitle {
+                font-size: 18px;
+            }
+
+
+            .exhibition-text .exhibition-name {
+                margin-bottom: 22px;
+            }
+
+
+            .exhibition-text .exhibition-location {
+                margin-bottom: 38px;
+            }
+
+
+            .exhibition-photos {
+                width: 78%;
+            }
+
+
+            .exhibition-photos img {
+                margin-bottom: 150px;
+            }
+
+        }
+
+
+        /* =========================
+           TABLET — PORTRAIT
+           ========================= */
+
+        @media (min-width: 701px) and (max-width: 1000px)
+            and (orientation: portrait) {
+
+            .exhibition-poster {
+                width: 78%;
+                max-width: 330px;
+            }
+
+
+            .exhibition-text {
+                font-size: 17px;
+            }
+
+
+            .exhibition-text h1 {
+                font-size: 22px;
+            }
+
+
+            .exhibition-subtitle {
+                font-size: 17px;
+            }
+
+
+            .exhibition-photos {
+                width: 82%;
+            }
+
+
+            .exhibition-photos img {
+                margin-bottom: 170px;
+            }
+
+        }
+
+
+        /* =========================
            MOBILE
            ========================= */
 
@@ -167,6 +291,11 @@
                 font-size: 22px;
 
                 margin-bottom: 30px;
+            }
+
+
+            .exhibition-subtitle {
+                font-size: 17px;
             }
 
 
@@ -332,11 +461,12 @@
             <div class="exhibition-text">
 
                 <h1>
-    공예+지금+24<br>
-    <span class="exhibition-subtitle">
-        Craft+Now+24
-    </span>
-</h1>
+                    공예+지금+24<br>
+
+                    <span class="exhibition-subtitle">
+                        Craft+Now+24
+                    </span>
+                </h1>
 
 
                 <p class="exhibition-name">
