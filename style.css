@@ -460,6 +460,10 @@ footer {
         height: 100px;
     }
 
+    .identity {
+        top: 30px;
+    }
+
     .identity strong {
         font-size: 24px;
     }
@@ -469,20 +473,13 @@ footer {
     }
 
     .navigation {
+        top: 30px;
         gap: 28px;
     }
 
     .navigation a,
     .navigation .works-link {
         font-size: 18px;
-    }
-
-    .hero {
-        width: 68%;
-    }
-
-    .about {
-        width: 88%;
     }
 
 }
