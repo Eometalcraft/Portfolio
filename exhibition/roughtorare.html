@@ -10,149 +10,50 @@
 
     <link rel="stylesheet" href="../style.css?v=5">
 
-<style>
+    <style>
 
-    /* =========================
-       EXHIBITION DETAIL
-       ========================= */
-
-    .exhibition-detail {
-        width: 88%;
-        max-width: 1400px;
-
-        margin: 45px auto 0;
-    }
-
-
-    /* =========================
-       INFORMATION
-       ========================= */
-
-    .exhibition-info {
-        display: grid;
-
-        grid-template-columns: 1fr 1fr;
-
-        column-gap: 15px;
-
-        align-items: start;
-
-        margin-bottom: 170px;
-    }
-
-
-    .exhibition-poster {
-        width: 100%;
-        max-width: 430px;
-
-        justify-self: center;
-
-        transform: translateX(40px);
-    }
-
-
-    .exhibition-poster img {
-        display: block;
-
-        width: 100%;
-        height: auto;
-    }
-
-
-    .exhibition-text {
-        padding-top: 5px;
-
-        font-size: 20px;
-        line-height: 1.35;
-    }
-
-
-    .exhibition-text h1 {
-        margin: 0 0 32px;
-
-        font-size: 25px;
-        font-weight: 400;
-    }
-
-
-    .exhibition-text p {
-        margin: 0;
-    }
-
-
-    .exhibition-text .exhibition-name {
-        margin-bottom: 24px;
-    }
-
-
-    .exhibition-text .exhibition-date {
-        margin-bottom: 0;
-    }
-
-
-    .exhibition-text .exhibition-location {
-        margin-bottom: 42px;
-    }
-
-
-    .exhibition-text .exhibition-description {
-        line-height: 1.35;
-    }
-
-
-    /* =========================
-       EXHIBITION PHOTOS
-       ========================= */
-
-    .exhibition-photos {
-        width: 72%;
-
-        margin: 0 auto;
-    }
-
-
-    .exhibition-photos img {
-        display: block;
-
-        width: 100%;
-        height: auto;
-
-        margin: 0 auto 220px;
-    }
-
-
-    .exhibition-photos img:last-child {
-        margin-bottom: 0;
-    }
-
-
-    /* =========================
-       TABLET
-       ========================= */
-
-    @media (min-width: 701px) and (max-width: 1000px) {
+        /* =========================
+           EXHIBITION DETAIL
+           ========================= */
 
         .exhibition-detail {
             width: 88%;
+            max-width: 1400px;
+            margin: 45px auto 0;
         }
 
 
+        /* =========================
+           INFORMATION
+           ========================= */
+
         .exhibition-info {
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
 
-            column-gap: 25px;
+            column-gap: 15px;
 
-            margin-bottom: 140px;
+            align-items: start;
+
+            margin-bottom: 170px;
         }
 
 
         .exhibition-poster {
-            width: 82%;
-            max-width: 350px;
+            width: 100%;
+            max-width: 430px;
 
             justify-self: center;
 
-            transform: none;
+            transform: translateX(40px);
+        }
+
+
+        .exhibition-poster img {
+            display: block;
+
+            width: 100%;
+            height: auto;
         }
 
 
@@ -161,121 +62,26 @@
 
             padding-top: 5px;
 
-            font-size: 18px;
+            font-size: 20px;
+            line-height: 1.35;
         }
 
 
         .exhibition-text h1 {
-            font-size: 23px;
+            margin: 0 0 32px;
 
-            margin-bottom: 28px;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+
+        .exhibition-text p {
+            margin: 0;
         }
 
 
         .exhibition-text .exhibition-name {
-            margin-bottom: 22px;
-        }
-
-
-        .exhibition-text .exhibition-location {
-            margin-bottom: 38px;
-        }
-
-
-        .exhibition-photos {
-            width: 78%;
-        }
-
-
-        .exhibition-photos img {
-            margin-bottom: 150px;
-        }
-
-    }
-
-
-    /* =========================
-       TABLET — PORTRAIT
-       ========================= */
-
-    @media (min-width: 701px) and (max-width: 1000px)
-        and (orientation: portrait) {
-
-        .exhibition-poster {
-            width: 78%;
-            max-width: 330px;
-        }
-
-
-        .exhibition-text {
-            font-size: 17px;
-        }
-
-
-        .exhibition-text h1 {
-            font-size: 22px;
-        }
-
-
-        .exhibition-photos {
-            width: 82%;
-        }
-
-
-        .exhibition-photos img {
-            margin-bottom: 170px;
-        }
-
-    }
-
-
-    /* =========================
-       MOBILE
-       ========================= */
-
-    @media (max-width: 700px) {
-
-        .exhibition-detail {
-            width: 100%;
-
-            margin-top: 30px;
-        }
-
-
-        .exhibition-info {
-            display: block;
-
-            margin-bottom: 100px;
-        }
-
-
-        .exhibition-poster {
-            width: 75%;
-
-            max-width: 430px;
-
-            margin: 0 auto 45px;
-
-            transform: none;
-        }
-
-
-        .exhibition-text {
-            font-size: 17px;
-
-            padding: 0;
-        }
-
-
-        .exhibition-text h1 {
-            font-size: 22px;
-
-            margin-bottom: 30px;
-        }
-
-
-        .exhibition-text .exhibition-name {
-            margin-bottom: 22px;
+            margin-bottom: 24px;
         }
 
 
@@ -285,27 +91,13 @@
 
 
         .exhibition-text .exhibition-location {
-            margin-bottom: 35px;
+            margin-bottom: 42px;
         }
 
 
-        .exhibition-photos {
-            width: 88%;
+        .exhibition-text .exhibition-description {
+            line-height: 1.35;
         }
-
-
-        .exhibition-photos img {
-            margin-bottom: 110px;
-        }
-
-
-        .exhibition-photos img:last-child {
-            margin-bottom: 0;
-        }
-
-    }
-
-</style>
 
 
         /* =========================
@@ -314,7 +106,6 @@
 
         .exhibition-photos {
             width: 72%;
-
             margin: 0 auto;
         }
 
@@ -331,6 +122,109 @@
 
         .exhibition-photos img:last-child {
             margin-bottom: 0;
+        }
+
+
+        /* =========================
+           TABLET
+           ========================= */
+
+        @media (min-width: 701px) and (max-width: 1000px) {
+
+            .exhibition-detail {
+                width: 88%;
+            }
+
+
+            .exhibition-info {
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+                column-gap: 25px;
+
+                margin-bottom: 140px;
+            }
+
+
+            .exhibition-poster {
+                width: 82%;
+                max-width: 350px;
+
+                justify-self: center;
+
+                transform: none;
+            }
+
+
+            .exhibition-text {
+                min-width: 0;
+
+                padding-top: 5px;
+
+                font-size: 18px;
+            }
+
+
+            .exhibition-text h1 {
+                font-size: 23px;
+
+                margin-bottom: 28px;
+            }
+
+
+            .exhibition-text .exhibition-name {
+                margin-bottom: 22px;
+            }
+
+
+            .exhibition-text .exhibition-location {
+                margin-bottom: 38px;
+            }
+
+
+            .exhibition-photos {
+                width: 78%;
+            }
+
+
+            .exhibition-photos img {
+                margin-bottom: 150px;
+            }
+
+        }
+
+
+        /* =========================
+           TABLET — PORTRAIT
+           ========================= */
+
+        @media (min-width: 701px) and (max-width: 1000px)
+            and (orientation: portrait) {
+
+            .exhibition-poster {
+                width: 78%;
+                max-width: 330px;
+            }
+
+
+            .exhibition-text {
+                font-size: 17px;
+            }
+
+
+            .exhibition-text h1 {
+                font-size: 22px;
+            }
+
+
+            .exhibition-photos {
+                width: 82%;
+            }
+
+
+            .exhibition-photos img {
+                margin-bottom: 170px;
+            }
+
         }
 
 
